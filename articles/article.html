@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style1.css">
+
+    <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+   
+    
+</head>
+<body>
+    
+    <!-- MENU -->
+    <header class="header">
+        <div class="header__content">
+          <a class="header__logo" href="">
+            <img src="../images/scrawl2.png" alt="logo website">
+          </a>
+          <ul class="header__menu">
+            <li><a href="../index.html">Home</a></li>
+            <li class="dropbtn"><a href="" >Articles</a>
+              <div class="dropdown-content" id="header_dropdown">
+              </div></li>
+            <li><a href="">Disclaimer</a></li>
+          </ul>
+          <div class="header__quick">
+            <a href="">Contacts</a>
+            <div class="icon-hamburger">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+   
+    <div class="cover_articles" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url(../images/muroNero.jpg);">
+    
+      <div class="grid pt-5" >
+            <div class="col-30 table mt-2">
+              <div class="metadata" onclick="openDocumentsList()">
+                  <b>Documents</b> <img width="24" height="24" src="https://img.icons8.com/material-sharp/24/sort-down.png" alt="sort-down"/>
+              </div>
+              <div>
+                <ul class="dropMetadata-content" id="dropDocuments"></ul>
+              </div>
+                
+              
+              <div class="metadata mt-2" onclick="openMetadata()">
+                <b>Metadata</b> <img width="24" height="24" src="https://img.icons8.com/material-sharp/24/sort-down.png" alt="sort-down"/>
+              </div>
+              <div class="dropMetadata-content" id="dropMetadata">
+                  <div class="tab">
+
+                  </div>
+              </div>
+          </div>
+            
+          <div id ="article_container"class="col-70 mt-2 mb-2" style="background-color: rgba(249, 249, 249, 0.9); border-radius: 5px;">
+            <div id="article">
+              <h1>Click on the "Documents" button and choose the article you'd like to read!</h1>
+            </div>
+        
+          </div>
+      </div>
+          
+    <div id="buttonHighlightedDiv" style="display: none;">
+      <button id="goToHighlighted"> Scroll to next highlighted</button>
+    </div>
+
+    <!--- STYLE BUTTONS -->
+    <div id="button-container" class="style-button-container">
+      
+      <!-- Pulsanti per cambiare stile -->
+      <button class="style-button" id="default-style"></button>
+      <button class="style-button" id="dark-style"></button>
+      <!-- Pulsante del contenitore -->
+      <button class="container-button" id="container-button"></button>
+    </div>
+    <script src="../scripts/general.js"></script>
+    <script src ="../scripts/articles.js"></script>
+    
+    
+     
+
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="styles/style1.css">
+    <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+
+</head>
+<body>
+    <!-- MENU -->
+    <header class="header">
+      <div class="header__content">
+        <a class="header__logo" href="">
+          <img src="../images/scrawl2.png" alt="logo website">
+        </a>
+        <ul class="header__menu">
+          <li><a href="">Home</a></li>
+          <li><a href="articles/article.html" >Articles</a></li>
+          <li><a href="">Disclaimer</a></li>
+        </ul>
+        <div class="header__quick">
+          <a href="">Contacts</a>
+          <div class="icon-hamburger">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- COVER -->
+    <div class="cover" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('../images/muroNero.jpg');">
+      <div class="cover__content p-3">
+        <h1 class="pt-4"> Urban Scrawl</h1>
+        <h4> A journey through cities, time and stories <br> to discover something new about something that someone may dismiss as "scrawls" <br> but is actually real art. </h4>
+        <a href="#spacer_map" class="button">Get started</a>
+      </div>
+    </div>
+    <div class="spacer" id="spacer_map"></div>
+
+    <!-- MAP -->
+
+    <div class="grid">
+      <div class="col-30 p-3">
+        <h2>Where?</h2>
+        <h4>Discover the world of street art with our interactive map!</h4>
+        <p style="text-align: justify;">Explore the locations of the vibrant murals and street art featured in our articles. Click on the markers to learn more about each artwork and to go straight to the article that talks about it. Dive into the urban art scene and uncover the creativity that adorns our cities. Happy exploring!
+        </p>
+        
+      </div>
+      <div id ="map" class="col-70"></div>
+    </div>
+    
+    <!-- FIRST SECTION -->
+    <div class="grid pt-4">
+        <div class="col-50">
+          <h2>What?</h2>
+            <a href="" class="button mb-2">Call to action</a>
+        </div>
+        <div class="col-50">
+          <div class="cover" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random');">
+            <div class="cover__content">
+              <h1> Cover title</h1>
+              <h2> Subtitle </h2>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- SECOND SECTION -->
+
+    <div class="grid pt-4">
+        <div class="col-50">
+            <h3>Lorem ipsum</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, exercitationem ad ab maxime animi dicta architecto incidunt impedit eaque maiores debitis dolore. Eveniet ut possimus nemo fuga corrupti omnis id?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, exercitationem ad ab maxime animi dicta architecto incidunt impedit eaque maiores debitis dolore. Eveniet ut possimus nemo fuga corrupti omnis id?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, exercitationem ad ab maxime animi dicta architecto incidunt impedit eaque maiores debitis dolore. Eveniet ut possimus nemo fuga corrupti omnis id?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, exercitationem ad ab maxime animi dicta architecto incidunt impedit eaque maiores debitis dolore. Eveniet ut possimus nemo fuga corrupti omnis id?</p>
+        </div>
+        <div class="col-50">
+            <div class="cover" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random');">
+              <div class="cover__content">
+                <h1> Cover title</h1>
+                <h2> Subtitle </h2>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- THIRD SECTION -->
+
+    <div class="grid pt-4">
+        
+        <div class="col-50">
+            <div class="cover" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random');">
+              <div class="cover__content">
+                <h1> Cover title</h1>
+                <h2> Subtitle </h2>
+              </div>
+            </div>
+        </div>
+        <div class="col-50">
+            <div class="p-4">
+                <h2>Lorem ipsum</h2>
+                <h3>Lorem ipsum</h3>
+                <a href="" class="button">Call to action</a>
+            </div> 
+        </div>
+    </div>
+    
+    <!--- STYLE BUTTONS -->
+    <div id="button-container" class="style-button-container">
+      
+      <!-- Pulsanti per cambiare stile -->
+      <button class="style-button" id="default-style"></button>
+      <button class="style-button" id="dark-style"></button>
+      <!-- Pulsante del contenitore -->
+      <button class="container-button" id="container-button"></button>
+    </div>
+
+    <script src="scripts/map.js"></script>
+    <script src="scripts/general.js"></script>
+
+</body>
+</html>
