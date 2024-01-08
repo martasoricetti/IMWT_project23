@@ -9,13 +9,13 @@ var geoJson = {
 		  "properties": {
               'title': 'El Segundo Barrio, El Paso, Texas',
               'images': [
-                ['../images/suarez.png','<em>Benito Juárez</em>. Immortalized hero of Mexican nationalism, defender against foreign intervention, and icon of indigeneity.'],
-                ['../images/smiling_girl.png','<em>Laughing Girl</em>. Portrait of a young girl, laughing, two stories tall, with a halo-like frame around her head.'],
-                ['../images/virgin_mary.png','Three examples of the <em>Virgin Mary</em> in Segundo Barrio, a figure who represents Catholicism’s strong presence in the borderland.'],
-                ['../images/boy_lying.png', '<em>Boy Lying Dead</em>. A symbolic enlargement of death’s unjust and persistent presence for migrant children in the area. Note pedestrian at bottom right for scale.'],
-                ['../images/aliens.png', '<em>Borderland Aliens</em>. A rerouting of the term “illegal alien” so often applied to Latinos of color, especially in the border region.'],
-                ['../images/pig_trump.png','<em>Pig Trump</em>. Trump painted in a revolting way, inviting mockery as if he’s been caught with his pants down.'],
-                ['../images/humptydumpty.png','<em>Humpty Dumpty Trump</em>. Trump diminished in size and nursery rhyme imagery, suggesting his failure is certain, imminent, and irreversible.']
+                ['images/suarez.png','<em>Benito Juárez</em>. Immortalized hero of Mexican nationalism, defender against foreign intervention, and icon of indigeneity.'],
+                ['images/smiling_girl.png','<em>Laughing Girl</em>. Portrait of a young girl, laughing, two stories tall, with a halo-like frame around her head.'],
+                ['images/virgin_mary.png','Three examples of the <em>Virgin Mary</em> in Segundo Barrio, a figure who represents Catholicism’s strong presence in the borderland.'],
+                ['images/boy_lying.png', '<em>Boy Lying Dead</em>. A symbolic enlargement of death’s unjust and persistent presence for migrant children in the area. Note pedestrian at bottom right for scale.'],
+                ['images/aliens.png', '<em>Borderland Aliens</em>. A rerouting of the term “illegal alien” so often applied to Latinos of color, especially in the border region.'],
+                ['images/pig_trump.png','<em>Pig Trump</em>. Trump painted in a revolting way, inviting mockery as if he’s been caught with his pants down.'],
+                ['images/humptydumpty.png','<em>Humpty Dumpty Trump</em>. Trump diminished in size and nursery rhyme imagery, suggesting his failure is certain, imminent, and irreversible.']
               ],
 			'article':''
           }
@@ -26,11 +26,11 @@ var geoJson = {
 		"properties": {
 			'title': 'Cement culvert, Juárez, Mexico',
 			'images': [
-				['../images/oil_racism.png','<em>Oi! Racism Stinks</em>. Oi! Racism Stinks. Indicator of ongoing tensions between border patrol and residents on both sides of the border.'],
-				['../images/berlin_wall.png','<em>Berlin Wall</em>. A parallel label given to the US-Mexico border, in the hopes that it will be torn down one day, too.'],
-				['../images/che_nelson.png','<em>Nelson Mandela and Che Guevara</em>. Two world-renowned political figures provide a contrast in favorability to depictions of Trump'],
-				['../images/chulk_trump.png', '<em>Chalk Trump</em>. The figure of Trump is shown on his knees holding his penis, which is pointed towards a globe.'],
-				['../images/sponge_trump.png', '<em>SpongeBob Trump</em>. SpongeBob Trump. Image ridiculing Presidents Trump and Peña Nieto, specifically portraying their ineptitude and racism.']		
+				['images/oil_racism.png','<em>Oi! Racism Stinks</em>. Oi! Racism Stinks. Indicator of ongoing tensions between border patrol and residents on both sides of the border.'],
+				['images/berlin_wall.png','<em>Berlin Wall</em>. A parallel label given to the US-Mexico border, in the hopes that it will be torn down one day, too.'],
+				['images/che_nelson.png','<em>Nelson Mandela and Che Guevara</em>. Two world-renowned political figures provide a contrast in favorability to depictions of Trump'],
+				['images/chulk_trump.png', '<em>Chalk Trump</em>. The figure of Trump is shown on his knees holding his penis, which is pointed towards a globe.'],
+				['images/sponge_trump.png', '<em>SpongeBob Trump</em>. SpongeBob Trump. Image ridiculing Presidents Trump and Peña Nieto, specifically portraying their ineptitude and racism.']		
 			],
 			'article':''
 		}
@@ -41,12 +41,12 @@ var geoJson = {
 			"properties": {
 				'title': 'Tijuana, Mexico',
 				'images': [
-					['../images/tijuana_wall.png','<em>Tijuana Wall Text Sample</em>. From left to right the text reads “Somos America,” “Tear down the wall,” “El arte es una extension de ser,” “Resiste sin odio, sin muros,” “No wall,” and “Haz mas arte.”'],
-					['../images/butterfly.png','. <em>Monarch Butterfly</em>. A dignified symbol of migration. <em>Pinky Kiss</em>. References the separation experienced by family members who are only able to link fingers when they meet at the wall.'],
-					['../images/love_trumps_hate.png','<em>Love Trumps Hate</em>. This hybrid flag shows the unity of the two countries despite what is perceived as hateful speech by Donald Trump.'],
-					['../images/fuckTrump.png', '<em>“Fuck Trump” on Grey Wall</em>. Expletive written on possible sight where the Rape Trump mural was.'],
-					['../images/rape_trump.png', '<em>Rape Trump</em>. A direct reaction to Trump’s claim that Mexican immigrants are rapists. The smaller text is directions to Trump Tower in New York City.'],
-					['../images/trump_and_four_women.png', '<em>Trump and Four Women of Color</em>. Large mural of Trump alongside four women from Syria, China, Guatemala, and Mexico. Smaller text in the right lower corner reads: “Todos somos migrantes,” which means “We’re all migrants.”']				
+					['images/tijuana_wall.png','<em>Tijuana Wall Text Sample</em>. From left to right the text reads “Somos America,” “Tear down the wall,” “El arte es una extension de ser,” “Resiste sin odio, sin muros,” “No wall,” and “Haz mas arte.”'],
+					['images/butterfly.png','. <em>Monarch Butterfly</em>. A dignified symbol of migration. <em>Pinky Kiss</em>. References the separation experienced by family members who are only able to link fingers when they meet at the wall.'],
+					['images/love_trumps_hate.png','<em>Love Trumps Hate</em>. This hybrid flag shows the unity of the two countries despite what is perceived as hateful speech by Donald Trump.'],
+					['images/fuckTrump.png', '<em>“Fuck Trump” on Grey Wall</em>. Expletive written on possible sight where the Rape Trump mural was.'],
+					['images/rape_trump.png', '<em>Rape Trump</em>. A direct reaction to Trump’s claim that Mexican immigrants are rapists. The smaller text is directions to Trump Tower in New York City.'],
+					['images/trump_and_four_women.png', '<em>Trump and Four Women of Color</em>. Large mural of Trump alongside four women from Syria, China, Guatemala, and Mexico. Smaller text in the right lower corner reads: “Todos somos migrantes,” which means “We’re all migrants.”']				
 				],
 				'article':''
 			}
@@ -57,10 +57,10 @@ var geoJson = {
 			"properties": {
 				'title': 'Long Beach, California',
 				'images': [
-					['../images/devil.png','<em>Devil Trump</em>. Trump literally being demonized and marked as a perpetuator of a certain kind of hell.'],
-					['../images/DACA_void.png','. <em>DACA Void</em>. Cartoon Trump holds and rips a paper in half that says “DACA,” as he glares at two other drawings of Dreamers.'],
-					['../images/dream_killer.png','<em>The Dream Killer</em>. Large mural of Trump uprooting humans/trees on the US side and dumping them in Mexico.'],
-					['../images/dreamers.png', '<em>Dreamers</em>. Large mural of Trump as a clown, luring in children with red balloons.']				
+					['images/devil.png','<em>Devil Trump</em>. Trump literally being demonized and marked as a perpetuator of a certain kind of hell.'],
+					['images/DACA_void.png','. <em>DACA Void</em>. Cartoon Trump holds and rips a paper in half that says “DACA,” as he glares at two other drawings of Dreamers.'],
+					['images/dream_killer.png','<em>The Dream Killer</em>. Large mural of Trump uprooting humans/trees on the US side and dumping them in Mexico.'],
+					['images/dreamers.png', '<em>Dreamers</em>. Large mural of Trump as a clown, luring in children with red balloons.']				
 				],
 				'article':''
 			}
@@ -72,12 +72,12 @@ var geoJson = {
             'title': 'Hong Kong',
 			"article":'',
 			"images": [
-				['../images/king_of_kowloon.avif', '<em>King of Kowloon photograph</em>. Tsang Tsou-choi, better known as the "King of Kowloon", pictured in 2003.'],
-				['../images/3504.avif', '<em>A King of Kowloon\'s work</em>. Some of Tsang\'s work at a Star Ferry pier in Hong Kong.'],
-				['../images/5514.avif', '<em>Calligraphy by Tsang Tsou Choi (left)</em>. It is next to Keith Haring\'s Untitled, 1983 at the preview of an auction at Sotheby\'s Hong Kong in 2015.'],
-				['../images/1956.avif', '<em>Tsang Tsou-choi at work in 2002</em>.'],
-				['../images/3118.avif', '<em>A partially revealed work of Tsang\'s under a bridge in Hong Kong</em>.'],
-				['../images/3051.avif', '<em>Tsang Tsou-choi in 1996</em>.']
+				['images/king_of_kowloon.avif', '<em>King of Kowloon photograph</em>. Tsang Tsou-choi, better known as the "King of Kowloon", pictured in 2003.'],
+				['images/3504.avif', '<em>A King of Kowloon\'s work</em>. Some of Tsang\'s work at a Star Ferry pier in Hong Kong.'],
+				['images/5514.avif', '<em>Calligraphy by Tsang Tsou Choi (left)</em>. It is next to Keith Haring\'s Untitled, 1983 at the preview of an auction at Sotheby\'s Hong Kong in 2015.'],
+				['images/1956.avif', '<em>Tsang Tsou-choi at work in 2002</em>.'],
+				['images/3118.avif', '<em>A partially revealed work of Tsang\'s under a bridge in Hong Kong</em>.'],
+				['images/3051.avif', '<em>Tsang Tsou-choi in 1996</em>.']
 			]
           }
       	},
@@ -88,9 +88,9 @@ var geoJson = {
 			  'title': 'Nairobi, Kenya',
 			  "article":'',
 			  "images": [
-				  ['../images/feminists_fighting_against_COVID19.jpg', '<em>Feminsts Fighting Against COVID-19</em> - Mathare Roots Initiative'],
-				  ['../images/corona_is_real.png', '<em>Corona is Real</em> - Mathare Roots/Msale'],
-				  ['../images/place-making.png', '<em>Place-making, public engagement community awareness through #TalkingWallProject advocacy in intervention during Covid19</em> - Daddo Omutitii']
+				  ['images/feminists_fighting_against_COVID19.jpg', '<em>Feminsts Fighting Against COVID-19</em> - Mathare Roots Initiative'],
+				  ['images/corona_is_real.png', '<em>Corona is Real</em> - Mathare Roots/Msale'],
+				  ['images/place-making.png', '<em>Place-making, public engagement community awareness through #TalkingWallProject advocacy in intervention during Covid19</em> - Daddo Omutitii']
 			  ]
 			}
 		},
@@ -101,7 +101,7 @@ var geoJson = {
 			  'title': 'Kigali, Rwanda',
 			  "article":'',
 			  "images": [
-				  ['../images/the_everyday_fight_against_COVID19.png', '<em>The everyday fight against COVID-19</em> - Innocent Kagabo']
+				  ['images/the_everyday_fight_against_COVID19.png', '<em>The everyday fight against COVID-19</em> - Innocent Kagabo']
 			  ]
 			}
 		}
@@ -203,7 +203,7 @@ document.getElementById('map').addEventListener('click', function(event) {
     if (target.classList.contains('button-popup')) {
         // Handle button click event here
         // You can use this section to redirect to another page or perform any other action
-        window.location.href = '../articles/article.html'; // Example: Redirect to article.html	
+        window.location.href = 'article.html'; // Example: Redirect to article.html	
     }
 });
 
@@ -211,7 +211,7 @@ document.getElementById('map').addEventListener('click', function(event) {
 $(function loadCovers() {
 
 	// Fetch JSON data
-	fetch("../articles/articlesJson.json")
+	fetch("articles/articlesJson.json")
 		.then((response) => response.json())
 		.then((data) => {
 			const lastArticlesSec = document.getElementById("last_articles");

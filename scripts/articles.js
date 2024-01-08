@@ -57,7 +57,7 @@ sidebarToggleButton.addEventListener('click', toggleSidebar);
 //update issue list
 $(function loadIssues(){
   // Fetch JSON data
-  fetch("./articles/articlesJson.json")
+  fetch("articles/articlesJson.json")
       .then((response) => response.json())
       .then((data) => {
           const issue_section = document.getElementById("article");

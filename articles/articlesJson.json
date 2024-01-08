@@ -39,7 +39,7 @@
         {
             "number": 3,
             "title": "Available soon",
-            "cover":"../images/coming_soon.avif",
+            "cover":"images/coming_soon.avif",
             "issue_articles": []
 
         }
