@@ -125,7 +125,7 @@ padding:10px 0 20px;
   position:relative;
 }
 
-#artDeco-style {background-image: url('../images/pattern2.gif'); background-position: 0 0; background-size: 700px;}
+#artDeco-style {background-image: url('images/pattern2.gif'); background-position: 0 0; background-size: 700px;}
 #artDeco-style p, #default-style p, #punkzine-style p{
   position: absolute;
   top: 50%;
@@ -135,17 +135,17 @@ padding:10px 0 20px;
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
-#artDeco-style p{font-family: 'Delauney'; font-size: 18px;}
+#artDeco-style p{font-family: 'Peignot'; font-size: 18px;}
 #artDeco-style:hover{background-image: none;}
 #artDeco-style:hover p, #default-style:hover p, #punkzine-style:hover p{opacity: 1;}
 
-#default-style{background-image: url('../images/muroNero.jpg'); background-position: 0 0; background-size: 200px;}
+#default-style{background-image: url('images/muroNero.jpg'); background-position: 0 0; background-size: 200px;}
 #default-style:hover{background-image: none;}
 #default-style p{font-family: 'DOCALLISME ON STREET'; font-size: 22px;}
 
-#punkzine-style{background-image: url('../images/punkzine_background.jpg'); background-position: 0 0; background-size: 100px;}
+#punkzine-style{background-image: url('images/punkzine_background.jpg'); background-position: 0 0; background-size: 100px;}
 #punkzine-style:hover{background-image: none;}
-#punkzine-style p{font-family: 'Handwrittenbold'; font-size: 13px;}
+#punkzine-style p{font-family: 'Handwritten'; font-size: 13px;}
 
 /*ARTICLES*/
 
