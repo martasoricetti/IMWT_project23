@@ -24,20 +24,20 @@ $(document).ready(function() {
         });
         var ArtDeco = document.getElementById('artDeco-style');
         ArtDeco.addEventListener('click', function(){
-            document.getElementById("historical_css").setAttribute("href", "../styles/artDeco.css");
-            localStorage.setItem('selectedStyle', "../styles/artDeco.css");
+            document.getElementById("historical_css").setAttribute("href", "styles/artDeco.css");
+            localStorage.setItem('selectedStyle', "styles/artDeco.css");
             changeStyle('artDeco-style');
         });
         var Punkzine = document.getElementById('punkzine-style');
         Punkzine.addEventListener('click', function(){
-            document.getElementById("historical_css").setAttribute("href", "../styles/punkzine.css");
-            localStorage.setItem('selectedStyle', "../styles/punkzine.css");
+            document.getElementById("historical_css").setAttribute("href", "styles/punkzine.css");
+            localStorage.setItem('selectedStyle', "styles/punkzine.css");
             changeStyle('punkzine-style');
         });
         var Default = document.getElementById('default-style');
         Default.addEventListener('click', function(){
-            document.getElementById("historical_css").setAttribute("href", "../styles/style1.css");
-            localStorage.setItem('selectedStyle', "../styles/style1.css");
+            document.getElementById("historical_css").setAttribute("href", "styles/style1.css");
+            localStorage.setItem('selectedStyle', "styles/style1.css");
             changeStyle('default-style')
         })
     });
