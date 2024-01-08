@@ -1,23 +1,10 @@
-/*colors: 
-green: #44D044
-purple: #5D1482
-darker green: #158415
-black: #081709*/
-
-/* ! Reset per diversi browser*/
-
-@font-face {
-  font-family: Peignot;
-  src: url('Peignot.ttf');
-}
-
 body, html{ font-family: 'Peignot'; font-size: 20px; background-color: #FFFFF0;}
 #cover_text_index{display: none;}
 
 /* MENU*/
 /* definizione del menu in modalità desktop*/
 /*definizione variabili css*/
-:root { --quick-color: rgb(255, 5, 5); --menu-color:#FFFFF0; --menu-hover:#44D044}
+:root { --quick-color: rgb(255, 5, 5); --menu-color:#FFFFF0; --menu-hover:#44D044; --menu-bg: #800020;}
 
 .header__quick{color:var(--menu-color); font-size: 18px;}
 
@@ -34,6 +21,13 @@ body, html{ font-family: 'Peignot'; font-size: 20px; background-color: #FFFFF0;}
 .nav-transparent-background{background-color: rgba(0,0,0,0);}
 .nav-colored-background{background-color: #800020;
   transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+@media (max-width: 768px) {
+  .header__menu{background-color: var(--menu-bg);}
+  .icon-hamburger span{background:#800020;}
+  .nav-colored-background .icon-hamburger span{background: #FFFFF0;}
+  .menu-open .icon-hamburger span{background: #FFFFF0;}
 }
 
 

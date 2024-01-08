@@ -1,3 +1,9 @@
+@font-face { font-family: PunkWest; src: url('Punk\ West.otf');}
+@font-face { font-family: Handwritten; src: url('Handwritten.ttf');}
+@font-face { font-family: Typewritern; src: url('Typewritten.ttf');}
+@font-face { font-family: DOCALLISME ON STREET; src: url('DocallismeOnStreet-ZVO1Z.otf'); }
+@font-face {font-family: Peignot; src: url('Peignot.ttf');}
+
 /* ! Reset per diversi browser*/
 
 body, html{ font-family: 'Inter', Arial, Helvetca, sans-serif; font-size: 16px; box-sizing: border-box;margin: 0;padding: 0; overflow-x: hidden;}*,*:before,*:after{ box-sizing: border-box; }h1,h2,h3,h4,h5,h6, p, ol, ul{margin: 0 0 1rem 0;padding: 0;}ol,ul{list-style-type: none;}img{height: auto;}h1{font-size: 4rem;} h2{font-size: 3rem;} h3{font-size: 2rem;} h4{font-size: 1rem;} h5{font-size: 0.8rem;} h6{font-size: 0.6rem;}a{text-decoration:none}
@@ -280,7 +286,6 @@ padding:10px 0 20px;
 }
 
 .sidebar_button {
-  border:2px solid red;
   top: 50%;
 }
 
@@ -293,7 +298,6 @@ padding:10px 0 20px;
 @media (max-width: 991px){
   .sidebar.open{
     width:100%;
-    background-color: #fff;
   }
 }
 
@@ -414,13 +418,16 @@ table th {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  height:400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 10px;
 }
 
 .card img{
   max-width: 100%; /* Ensure the image doesn't exceed the card width */
-  max-height: 80%; /* Set the maximum height for the image */
   object-fit: cover; /* Crop the image if it's larger than the card */
+  padding:30px;
 }
 
 .card:hover {

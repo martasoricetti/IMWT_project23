@@ -4,9 +4,6 @@ purple: #5D1482
 darker green: #158415
 black: #081709*/
 
-/* ! Reset per diversi browser*/
-@font-face { font-family: DOCALLISME ON STREET; src: url('DocallismeOnStreet-ZVO1Z.otf'); }
-
 /* MENU*/
 /* definizione del menu in modalità desktop*/
 /*definizione variabili css*/
@@ -155,6 +152,9 @@ a{color: #44D044;}
   background-color: #01bd01;
 }
 
+#dropDocuments, #dropMetadata, #dropInformation, #dropIndex{
+  background-color:#292929;
+}
 
 /*ISSUES*/
 

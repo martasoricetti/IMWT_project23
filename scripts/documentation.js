@@ -45,4 +45,3 @@ initializeScrolling('.scrolling-column3', '#fix-me3');
 initializeScrolling('.scrolling-column4', '#fix-me4');
 initializeScrolling('.scrolling-column5', '#fix-me5');
 initializeScrolling('.scrolling-column6', '#fix-me6');
-initializeScrolling('.scrolling-column7', '#fix-me7');

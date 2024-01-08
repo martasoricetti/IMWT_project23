@@ -1,8 +1,3 @@
-
-@font-face { font-family: PunkWest; src: url('Punk\ West.otf');}
-@font-face { font-family: Handwritten; src: url('Handwritten.ttf');}
-@font-face { font-family: Typewritern; src: url('Typewritten.ttf');}
-
 body, html{ font-family: 'Typewritern';}
 body{background-image: url('../images/texture_photocopy.png'); background-size: contain; mix-blend-mode: multiply;}
 #cover_text_index{display: none;}
@@ -265,6 +260,12 @@ p {font-size: 1rem;margin-bottom:1rem; line-height: 1.2;}
   column-count: 2;
 }
 
+@media (max-width: 991px){
+  .sidebar.open{
+    background-color: #fffcfc;
+  }
+}
+
 /*ARTICLE*/
 
 #article .cover{background-size:cover;}
@@ -295,7 +296,6 @@ table th {
 }
 
 .card img {
-  padding:20px;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
