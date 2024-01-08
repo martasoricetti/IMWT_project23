@@ -162,7 +162,7 @@ function onEachFeature(feature, layer) {
 L.geoJson(geoJson, {
 	pointToLayer: function(feature, latlng) {
 		var greenIcon = L.icon({
-			iconUrl: "../images/map_marker.png",
+			iconUrl: "images/map_marker.png",
 			
 		
 			iconSize:     [25, 42], // size of the icon
