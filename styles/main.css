@@ -139,7 +139,7 @@ padding:10px 0 20px;
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
-#artDeco-style p{font-family: 'Delauney'; font-size: 20px; font-weight: bold;}
+#artDeco-style p{font-family: 'Delauney'; font-size: 20px;}
 #artDeco-style:hover{background-image: none;}
 #artDeco-style:hover p, #default-style:hover p, #punkzine-style:hover p{opacity: 1;}
 
@@ -149,7 +149,7 @@ padding:10px 0 20px;
 
 #punkzine-style{background-image: url('../images/punkzine_background.jpg'); background-position: 0 0; background-size: 100px;}
 #punkzine-style:hover{background-image: none;}
-#punkzine-style p{font-family: 'PunkWest'; font-size: 22px;}
+#punkzine-style p{font-family: 'PunkWest'; font-size: 19px;}
 
 /*ARTICLES*/
 
