@@ -139,7 +139,7 @@ padding:10px 0 20px;
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
-#artDeco-style p{font-family: 'Peignot'; font-size: 20px; font-weight: bold;}
+#artDeco-style p{font-family: 'Delauney'; font-size: 20px; font-weight: bold;}
 #artDeco-style:hover{background-image: none;}
 #artDeco-style:hover p, #default-style:hover p, #punkzine-style:hover p{opacity: 1;}
 
