@@ -5,7 +5,7 @@ var geoJson = {
     "type": "FeatureCollection",
           features: [{
           type: 'Feature',
-          "geometry": { "type": "Point", "coordinates": [-106.478, 31.754]},
+          "geometry": { "type": "Point", "coordinates": [-106.460953, 	31.772543]},
 		  "properties": {
               'title': 'El Segundo Barrio, El Paso, Texas',
               'images': [
@@ -15,23 +15,98 @@ var geoJson = {
                 ['../images/boy_lying.png', '<em>Boy Lying Dead</em>. A symbolic enlargement of death’s unjust and persistent presence for migrant children in the area. Note pedestrian at bottom right for scale.'],
                 ['../images/aliens.png', '<em>Borderland Aliens</em>. A rerouting of the term “illegal alien” so often applied to Latinos of color, especially in the border region.'],
                 ['../images/pig_trump.png','<em>Pig Trump</em>. Trump painted in a revolting way, inviting mockery as if he’s been caught with his pants down.'],
-                ['../images/humptydumpty.png','<em>Humpty Dumpty Trump</em>. Trump diminished in size and nursery rhyme imagery, suggesting his failure is certain, imminent, and irreversible.' ]
+                ['../images/humptydumpty.png','<em>Humpty Dumpty Trump</em>. Trump diminished in size and nursery rhyme imagery, suggesting his failure is certain, imminent, and irreversible.']
               ],
 			'article':''
           }
-      }, {
+      	},
+		{
+		type: 'Feature',
+		"geometry": { "type": "Point", "coordinates": [-106.487015, 31.738581]},
+		"properties": {
+			'title': 'Cement culvert, Juárez, Mexico',
+			'images': [
+				['../images/oil_racism.png','<em>Oi! Racism Stinks</em>. Oi! Racism Stinks. Indicator of ongoing tensions between border patrol and residents on both sides of the border.'],
+				['../images/berlin_wall.png','<em>Berlin Wall</em>. A parallel label given to the US-Mexico border, in the hopes that it will be torn down one day, too.'],
+				['../images/che_nelson.png','<em>Nelson Mandela and Che Guevara</em>. Two world-renowned political figures provide a contrast in favorability to depictions of Trump'],
+				['../images/chulk_trump.png', '<em>Chalk Trump</em>. The figure of Trump is shown on his knees holding his penis, which is pointed towards a globe.'],
+				['../images/sponge_trump.png', '<em>SpongeBob Trump</em>. SpongeBob Trump. Image ridiculing Presidents Trump and Peña Nieto, specifically portraying their ineptitude and racism.']		
+			],
+			'article':''
+		}
+		},
+		{
+			type: 'Feature',
+			"geometry": { "type": "Point", "coordinates": [-117.046623, 32.522499]},
+			"properties": {
+				'title': 'Tijuana, Mexico',
+				'images': [
+					['../images/tijuana_wall.png','<em>Tijuana Wall Text Sample</em>. From left to right the text reads “Somos America,” “Tear down the wall,” “El arte es una extension de ser,” “Resiste sin odio, sin muros,” “No wall,” and “Haz mas arte.”'],
+					['../images/butterfly.png','. <em>Monarch Butterfly</em>. A dignified symbol of migration. <em>Pinky Kiss</em>. References the separation experienced by family members who are only able to link fingers when they meet at the wall.'],
+					['../images/love_trumps_hate.png','<em>Love Trumps Hate</em>. This hybrid flag shows the unity of the two countries despite what is perceived as hateful speech by Donald Trump.'],
+					['../images/fuckTrump.png', '<em>“Fuck Trump” on Grey Wall</em>. Expletive written on possible sight where the Rape Trump mural was.'],
+					['../images/rape_trump.png', '<em>Rape Trump</em>. A direct reaction to Trump’s claim that Mexican immigrants are rapists. The smaller text is directions to Trump Tower in New York City.'],
+					['../images/trump_and_four_women.png', '<em>Trump and Four Women of Color</em>. Large mural of Trump alongside four women from Syria, China, Guatemala, and Mexico. Smaller text in the right lower corner reads: “Todos somos migrantes,” which means “We’re all migrants.”']				
+				],
+				'article':''
+			}
+		},
+		{
+			type: 'Feature',
+			"geometry": { "type": "Point", "coordinates": [-118.193741, 33.770050]},
+			"properties": {
+				'title': 'Long Beach, California',
+				'images': [
+					['../images/devil.png','<em>Devil Trump</em>. Trump literally being demonized and marked as a perpetuator of a certain kind of hell.'],
+					['../images/DACA_void.png','. <em>DACA Void</em>. Cartoon Trump holds and rips a paper in half that says “DACA,” as he glares at two other drawings of Dreamers.'],
+					['../images/dream_killer.png','<em>The Dream Killer</em>. Large mural of Trump uprooting humans/trees on the US side and dumping them in Mexico.'],
+					['../images/dreamers.png', '<em>Dreamers</em>. Large mural of Trump as a clown, luring in children with red balloons.']				
+				],
+				'article':''
+			}
+		},
+	   	{
           type: 'Feature',
-          "geometry": { "type": "Point", "coordinates": [-123.97288585689788, 45.903886579968066]},
+          "geometry": { "type": "Point", "coordinates": [114.166667, 22.25]},
           "properties": {
-              'title': 'New York City',
-              'images': [
-                ['','Peter Minuit is credited with the purchase of the island of Manhattan in 1626.'],
-                ['','During the mid-19th Century, Broadway was extended the length of Manhattan.'],
-                ['','Times Square has the highest annual attendance rate of any tourist attraction in the world.']
-              ],
-			"article":""
+            'title': 'Hong Kong',
+			"article":'',
+			"images": [
+				['../images/king_of_kowloon.avif', '<em>King of Kowloon photograph</em>. Tsang Tsou-choi, better known as the "King of Kowloon", pictured in 2003.'],
+				['../images/3504.avif', '<em>A King of Kowloon\'s work</em>. Some of Tsang\'s work at a Star Ferry pier in Hong Kong.'],
+				['../images/5514.avif', '<em>Calligraphy by Tsang Tsou Choi (left)</em>. It is next to Keith Haring\'s Untitled, 1983 at the preview of an auction at Sotheby\'s Hong Kong in 2015.'],
+				['../images/1956.avif', '<em>Tsang Tsou-choi at work in 2002</em>.'],
+				['../images/3118.avif', '<em>A partially revealed work of Tsang\'s under a bridge in Hong Kong</em>.'],
+				['../images/3051.avif', '<em>Tsang Tsou-choi in 1996</em>.']
+			]
           }
-      }]};
+      	},
+		  {
+			type: 'Feature',
+			"geometry": { "type": "Point", "coordinates": [36.817223, -1.286389]},
+			"properties": {
+			  'title': 'Nairobi, Kenya',
+			  "article":'',
+			  "images": [
+				  ['../images/feminists_fighting_against_COVID19.jpg', '<em>Feminsts Fighting Against COVID-19</em> - Mathare Roots Initiative'],
+				  ['../images/corona_is_real.png', '<em>Corona is Real</em> - Mathare Roots/Msale'],
+				  ['../images/place-making.png', '<em>Place-making, public engagement community awareness through #TalkingWallProject advocacy in intervention during Covid19</em> - Daddo Omutitii']
+			  ]
+			}
+		},
+		{
+			type: 'Feature',
+			"geometry": { "type": "Point", "coordinates": [30.055666444, -1.939662908]},
+			"properties": {
+			  'title': 'Kigali, Rwanda',
+			  "article":'',
+			  "images": [
+				  ['../images/the_everyday_fight_against_COVID19.png', '<em>The everyday fight against COVID-19</em> - Innocent Kagabo']
+			  ]
+			}
+		}
+	]
+};
 
 
 
@@ -74,7 +149,7 @@ function onEachFeature(feature, layer) {
 									'<a class="prev" href="#" >&laquo; Previous</a>' +
 									'<a class="next" href="#">Next &raquo;</a>' +
 								'</div>'+
-								'<div class="button"><a href="#' + feature.properties.article+'">Go to the article</a></div>'
+								'<div class="button button-popup">Go to the article</div>'
 							'</div>';
 	
 		layer
@@ -121,25 +196,90 @@ $('#map').on('click', '.popup .cycle a', function() {
 	return false;
 });
 
-//var markers = [[31.754, -106.478], [ 45.903886579968066, -123.97288585689788,]];
-//var currentIndex = 0;
-
-//function panToNextMarker() {
-//    if (currentIndex < markers.length) {
-//        var marker = markers[currentIndex];
-//		map.panTo(new L.LatLng(marker[0], marker[1]), { animate: true });
-//		currentIndex = (currentIndex + 1) % markers.length; // Loop back to the first marker if all markers have been visited
-//	}
-//}
-
-//$(L.marker).on('click', function() {
-//	clearInterval(intervalID);// Stop the animation interval
-//});
+// Use event delegation to handle button clicks inside the map container
+document.getElementById('map').addEventListener('click', function(event) {
+    var target = event.target;
+    // Check if the clicked element is a button with the class 'button-popup'
+    if (target.classList.contains('button-popup')) {
+        // Handle button click event here
+        // You can use this section to redirect to another page or perform any other action
+        window.location.href = '../articles/article.html'; // Example: Redirect to article.html	
+    }
+});
 
 
+$(function loadCovers() {
 
+	// Fetch JSON data
+	fetch("../articles/articlesJson.json")
+		.then((response) => response.json())
+		.then((data) => {
+			const lastArticlesSec = document.getElementById("last_articles");
+			
+			// Populate the dropdown options based on JSON data
+			data.last_articles.forEach((article) => {
+				if (article.cover){
+				const cover = article.cover;
+				const title = article.title;
+				div_card = document.createElement('div');
+				div_card.classList.add('card');
+				div_card.classList.add('mt-3');
+				img = document.createElement('img');
+				img.setAttribute('style', 'width:100%')
+				img.setAttribute('src', cover);
+				div_card.classList.add("art-deco-image");
+				div_card.appendChild(img);
+				div_container = document.createElement('div');
+				div_container.classList.add('container');
+				h4 = document.createElement('h4');
+				h4.innerHTML = '<b>'+title+'</b>';
+				div_container.appendChild(h4);
+				div_card.appendChild(div_container);
+				lastArticlesSec.appendChild(div_card);
+			}
+			})})});
 
-// Set the interval (in milliseconds) between marker transitions
-//var interval = 1500; // Adjust this as needed
-//var intervalID = setInterval(panToNextMarker, interval);
-	
+function initializeScrolling(columnSelector, fixmeSelector) {
+	var col = $(columnSelector);
+	var fixme = $(fixmeSelector);
+	var fixmeTop = fixme.offset().top;
+	var height_logo = document.getElementById('logo').offsetHeight;
+	var mediaQuery = window.matchMedia('(min-width: 991px)');
+
+	//scroll event listener on the window
+	$(window).scroll(function() {
+		// is a method provided by jQuery. 
+		//It retrieves the vertical scrollbar position for the first element in the set of matched elements, 
+		//which, in this case, is the window. It returns the number of pixels that the document is currently scrolled vertically.
+		var currentScroll = $(window).scrollTop();
+		var colTop = col.offset().top;
+		var colBottom = colTop  + (col.height() - fixme.height());
+		var viewportBottom = currentScroll + $(window).height() - fixme.height()
+
+		//The current scroll position is greater than or equal to the top position of the fixed column
+		//The top position of the scrolling column is less than or equal to the bottom of the viewport.
+		//The bottom of the scrolling column is greater than or equal to the current scroll position.
+		if (mediaQuery.matches && currentScroll >= fixmeTop && currentScroll >= colTop && colTop <= viewportBottom && colBottom >= currentScroll) {
+			if (fixme.height() <= $(window).height()) {
+				fixme.css({
+					position: 'fixed',
+					top: 45 + height_logo,
+					width: fixme.width() // Set the width explicitly
+				});
+			} else {
+				fixme.css({
+					position: 'static',
+				});
+			}
+		} else {
+			fixme.css({
+				position: 'static',
+			});
+		}
+	});
+}
+
+// Example usage
+initializeScrolling('.scrolling-column1', '#fix-me1');
+initializeScrolling('.scrolling-column2', '#fix-me2');
+initializeScrolling('.scrolling-column3', '#fix-me3');

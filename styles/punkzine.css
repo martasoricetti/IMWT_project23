@@ -1,0 +1,356 @@
+
+@font-face { font-family: PunkWest; src: url('Punk\ West.otf');}
+@font-face { font-family: Handwritten; src: url('Handwritten.ttf');}
+@font-face { font-family: Typewritern; src: url('Typewritten.ttf');}
+
+body, html{ font-family: 'Typewritern';}
+body{background-image: url('../images/texture_photocopy.png'); background-size: contain; mix-blend-mode: multiply;}
+#cover_text_index{display: none;}
+/* MENU*/
+/* definizione del menu in modalità desktop*/
+/*definizione variabili css*/
+:root {--quick-color:red; --menu-bg: #292929; --menu-color:white; --menu-hover:#44D044}
+
+.header__quick{color:var(--menu-color); font-size: 38px; font-family: 'PunkWest';}
+
+.header__menu li{font-family: 'PunkWest'; font-size: 40px;}
+.header__menu li a, .header__quick a{ 
+  font-size: 1.2rem; text-transform: uppercase; color:#0e0e0e; background:none;
+  text-decoration: none; display: inline-block; padding-top:35px; padding-bottom: 5px; padding-left: 20px; padding-right:20px ; background-image: url("../images/tornpaper.png"); background-size: cover; font-weight: 700;
+}
+.header__menu li a:hover, .header__quick a:hover{animation: shaking 0.5s linear 2;}
+      @keyframes shaking {
+         0% {transform: rotate(0deg);}
+         20% {transform: rotate(-4deg);}
+         50% {transform: rotate(0deg);}
+         70% {transform: rotate(4deg);}
+         100% {transform: rotate(0deg);}
+      }
+.nav-transparent-background{background-color: rgba(0,0,0,0)};
+.nav-colored-background{background-color: rgb(0, 0, 0); }
+
+/* definizione del menu in modalità mobile*/
+@media (max-width: 768px) {
+  .header__menu{background-color: var(--menu-bg);}
+  .header__menu li{border-bottom: 1px solid #444;}
+  .nav-colored-background{background-color: rgb(0, 0, 0); transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+  .icon-hamburger span{background: var(--menu-bg);}
+  .nav-colored-background .icon-hamburger span{background: white;}
+  .menu-open .icon-hamburger span{background: white;}
+}
+
+/* ! TITLE SYSTEM */
+h1, .text-1 {font-family:'PunkWest'; font-size: 6.5rem;margin-bottom:1rem}
+h2, .text-2 {font-family:'PunkWest';font-size: 4.4rem;margin-bottom:1rem}
+h3, .text-3  {font-size: 1.8rem;margin-bottom:1rem}
+h4, .text-4 {font-family:'Handwritten'; font-size: 1.9rem; margin-bottom:1rem}
+p {font-size: 1rem;margin-bottom:1rem; line-height: 1.2;}
+
+/* Circle */
+
+
+
+/* ! BUTTON SYSTEM */
+.button { 
+  font-family: 'PunkWest';
+  font-size: 1rem; text-transform: uppercase; color:#0e0e0e; background:none;
+  text-decoration: none; display: inline-block;padding-top:50px; padding-left: 20px; padding-right:20px ; padding-bottom: 10px; background-image: url("../images/tornpaper.png"); background-size: cover; font-weight: 700;
+}
+.button:hover {animation: shaking 0.5s infinite;}
+      @keyframes shaking {
+         0% {transform: rotate(0deg);}
+         20% {transform: rotate(-4deg);}
+         50% {transform: rotate(0deg);}
+         70% {transform: rotate(4deg);}
+         100% {transform: rotate(0deg);}
+      }
+
+
+/* ! COVER */
+
+
+.cover{ 
+  text-align: center; padding:10px; margin:0; min-height: 100vh; width:100%; align-items: center; background-repeat: no-repeat; background-size:contain;
+  justify-content:center; display: flex; background-position: center center; background-attachment: fixed;
+}
+
+#cover_index{
+  background-image: url("../images/Tavola\ disegno\ 1.png");
+}
+/* l'asterisco serve per indicare tutti gli elementi all'interno della cover*/
+.cover * {color:#fff}
+
+/* ! MAP */
+.popup .button {font-size: 0.8rem;}
+.button-popup {
+ padding: 15px; display: inline-block; font-weight: bold; transition: all 0.4s ease 0s; background-image: none;}
+.button-popup:hover{
+    background-image: url("../images/handdrawn_circle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: black !important;
+    border: none !important;
+    background-color: transparent !important;
+    height: fit-content;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
+.cycle a{
+  color:#ff00d9;
+}
+.cycle a:hover{
+  font-weight: bold;
+}
+
+
+/* ! "CHOOSE THE STYLE" BUTTONS */
+
+#artDeco-style:hover{background-color: #ff00d9;}
+#default-style:hover{background-color: #ff00d9;}
+#punkzine-style:hover{background-color: #ff00d9;}
+
+
+/*ARTICLES*/
+
+/*METADATA and DOCUMENTS*/
+.metadata{
+  color:#0e0e0e; 
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding:1em;
+  margin: 1em;
+  line-height:1.5em;
+  border:solid 5px rgb(14, 14, 14);
+}
+.metadata:nth-child(1){margin-top: 50px;}
+#dropDocuments li, #dropInformation li, #dropIndex li, #dropMetadata{color:#000000;}
+#dropDocuments li:hover, #dropInformation a:hover, #dropIndex li:hover{font-weight: bold; cursor:pointer; }
+
+#dropDocuments, #dropInformation, #dropIndex, #dropMetadata{
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  background-color: 	#feff9c;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.img_article p{
+  font-family: 'Handwritten';
+  font-size: 1.5rem;
+}
+
+/*different highlight styles for each metadata class*/
+.highlight_places{
+  background-image: linear-gradient(
+    to right,
+    rgba(89, 234, 49, 0.232),
+    rgba(0, 255, 30, 0.745) 4%,
+    rgba(0, 255, 4, 0.322)
+  );
+}
+.highlight_date{
+  background-image: linear-gradient(
+    to right,
+    rgba(49, 209, 234, 0.232),
+    rgba(0, 221, 255, 0.897) 4%,
+    rgba(0, 234, 255, 0.244)
+  );
+}
+.highlight_people{
+  background-image: linear-gradient(
+    to right,
+    rgba(234, 148, 49, 0.232),
+    rgba(255, 153, 0, 0.842) 4%,
+    rgba(255, 200, 0, 0.322)
+  );
+}
+.highlight_event{
+  background-image: linear-gradient(
+    to right,
+    rgba(209, 49, 234, 0.232),
+    rgba(200, 0, 255, 0.745) 4%,
+    rgba(251, 0, 255, 0.211)
+  );
+}
+.highlight_keywords{
+  background-image: linear-gradient(
+    to right,
+    rgba(234, 49, 49, 0.232),
+    rgba(255, 0, 0, 0.637) 4%,
+    rgba(255, 0, 0, 0.211)
+  );
+}
+.highlight_hashtags{
+  background-image: linear-gradient(
+    to right,
+    rgba(49, 58, 234, 0.232),
+    rgba(30, 0, 255, 0.532) 4%,
+    rgba(34, 0, 255, 0.211)
+  );
+}
+.highlight_murales{
+  background-image: linear-gradient(
+    to right,
+    rgba(234, 49, 212, 0.232),
+    rgba(255, 0, 191, 0.745) 4%,
+    rgba(251, 0, 255, 0.211)
+  );
+}
+
+.highlight, .punkzine-highlight{
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 225, 0, 0.1),
+    rgb(255, 255, 0) 4%,
+    rgba(255, 225, 0, 0.3)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  color: black;
+}
+@keyframes highlight {
+  50% { background: transparent; }}
+.highlight{
+  animation: highlight 0.8s 3;
+}
+
+/*CHECKBOX*/
+
+/* When the checkbox is checked, add a neon color background */
+.container input:checked ~ .checkmark_places {
+  background-color:rgb(0, 255, 30);
+}
+.container input:checked ~ .checkmark_date {
+  background-color:rgb(0, 221, 255);
+}
+.container input:checked ~ .checkmark_people {
+  background-color:rgb(255, 153, 0);
+}
+.container input:checked ~ .checkmark_event {
+  background-color:rgb(200, 0, 255);
+}
+.container input:checked ~ .checkmark_keywords {
+  background-color:rgb(255, 0, 0);
+}
+.container input:checked ~ .checkmark_hashtags {
+  background-color:rgb(30, 0, 255);
+}
+.container input:checked ~ .checkmark_murales {
+  background-color:rgb(255, 0, 191);
+}
+
+/* SIDEBAR */
+.sidebar {
+  background-color: #9e9e9e8d;
+}
+
+.sidebar_button_container{
+  background-color: #ff00d9;
+}
+
+#article_container .cover {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#article_container .cover__content{
+  display: block;
+}
+
+#article_container .article_content{
+  column-count: 2;
+}
+
+/*ARTICLE*/
+
+#article .cover{background-size:cover;}
+.cover_articles{
+  background-image:url('../images/texture_photocopy.png'); min-height: 100vh; width: 100%; height: 100%; align-items: center;
+}
+
+#article img{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#article h1{
+  font-family: 'PunkWest'; font-size: 45px;
+}
+
+/*TABLE*/
+
+table th {
+  background-color:#01bd01;
+  color: white;
+}
+
+/*CARDS*/
+.card{
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border:solid 5px rgb(14, 14, 14);
+}
+
+.card img {
+  padding:20px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+/*TIMELINE*/
+.timeline h3{
+  font-family: 'PunkWest';
+}
+.timeline::after{background-color: #181818b9;}
+
+.textbox{
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  background-color: 	#feff9c;
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+
+/*DOCUMENTATION*/
+
+#cover_documentation *{color:black;}
+
+.documentation-grid p{
+  font-size: 20px;
+  word-spacing: 5px;
+}
+.documentation-grid h4{
+  font-size: 50px;
+}
+.documentation-grid h3{
+  font-size: 50px;
+}
+.documentation-grid h2{
+  font-size: 90px;
+}
+.documentation-grid b{
+  background-image: linear-gradient(
+    to right,
+    rgba(231, 234, 49, 0.232),
+    rgba(255, 255, 0, 0.833) 4%,
+    rgba(238, 255, 0, 0.421)
+  );
+}
+
+.documentation-grid a {
+  color:#ff00d9;
+}
+ 
+/*FOOTER*/
+.img{
+  background-image: url('../images/marta_punkzine.png');
+  background-position: center; background-size: contain;
+}
+
+.contact-card{border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border:solid 5px rgb(14, 14, 14);}
+
+.fa{background-color: #ff00d9; color:#0e0e0e;}
+
+.footer a:hover{opacity: 0.7;}

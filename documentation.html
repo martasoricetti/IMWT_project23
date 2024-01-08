@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/style1.css" id="historical_css">
+    <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+    <script src="https://kit.fontawesome.com/3bd97c56ef.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  
+    <!-- MENU -->
+    <div class="header_container">
+      <header class="header">
+        <div class="header__content">
+          <a class="header__logo" href="">
+            <img src="/images/scrawl2.png" alt="logo website" id="logo">
+          </a>
+          <ul class="header__menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="articles/article.html" >Issues</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+          </ul>
+          <div class="header__quick">
+            <a href="#footer">About</a>
+            <div class="icon-hamburger">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+     
+    
+    <!-- COVER -->
+    <div class="cover">
+    <div class="cover__content p-3" id="cover_documentation">
+        <h1 class="pt-4">Documentation </h1>
+        <h4>"Most people think typography is about fonts.<br> Most designers think typography is about fonts. <br>Typography is more than that, it’s expressing language through type.<br> Placement, composition, typechoice."</h4>
+        <small>Mark Boulton</small><br>
+        <div class="contain mt-3">
+            <p>
+                <a href="#spacer_map" class="roman-link button">
+                    <span class="bg-large">
+                        <span class="roman-top-left"></span>
+                        <span class="roman-bottom-right"></span>
+                    </span>
+                    <span class="bg-tall">
+                        <span class="roman-top-left"></span>
+                        <span class="roman-bottom-right"></span>
+                    </span>
+                    <span class="bg-medium">
+                        <span class="roman-top-left"></span>
+                        <span class="roman-bottom-right"></span>
+                    </span>
+                    Learn more
+                </a>
+            </p>
+          </div>
+    </div>
+    </div>
+
+    <div class="spacer" id="spacer_map"></div>
+    
+    <!--HISTORICAL THEMING-->
+    
+    <div class="grid documentation-grid pt-4">
+        <div class="col-100 p-3">
+            <h2>Art Deco</h2>
+            <p>Appearing just before World War I,<b>Art Deco</b> became the dominant artistic style of Europe and America up through the beginning of the World War II. <br>
+              It emerged as a deliberate and contrasting response to the elaborate and ornate styles of the preceding <b>Art Nouveau movement</b>.<br> Since Art Deco's influence extended 
+              across various disciplines, including architecture, fashion and visual arts, it assumed different forms but all characterized by a visual style that blends <b>luxury</b>, <b>elegance</b>, <b>geometry</b> and <b>modernity</b>. The influence of Cubism and Machine Age is strong in streamlined forms and symmetrical patterns, while The use of bold, contrasting colors and high-gloss materials such as chrome and glass reflects a sense of opulence.<br>
+              Art Deco was a truly international style, but its dominance ended with the beginning of World War II and the rise of the strictly functional and unadorned styles of modern architecture and the International Style of architecture that followed.</p>
+        </div>
+    </div>
+
+    <div class="grid documentation-grid">
+        <div class="col-70 mt-2">
+            <div class="fix-me" id="fix-me1">
+                <h3>Images and Layout</h3>
+                <p>Art Deco's influence touched everything from architecture to fashion, but its appearance in posters is especially striking and from there derives the main source of inspiration for the image of the cover page and the contact picture in the footer. <br>
+                In the illustration of the cover, the key features of Art Deco that have been emphasized are <b>geometric and bold shapes</b>, <b>big scales</b> and <b>minimalistic forms</b>. In particular, images like <b>A.M. Cassandre's <em>Normandie</em></b> (1935), <b>Robert Mallet - Stevens's <em>St Jean de Luz</em></b> (1928) or <b>Franco Barberis's <em>Candee</em></b> (1929) are almost overwhelming in their presentation of scale, the viewer's feeling is to be dominated by the impressive architectural presence of both the ship and the building, but also by the woman's figure in Barberis's poster.<br>
+                For the representation of the skyline in the cover image and also for the choice of the color palette, the straightest reference is <b>Johannes Handschin's <em>Grand Prix Montreux</em></b> (1934), with its rhytmic repetition of hard lines and bold shapes.
+            </p>
+            </div>
+        </div>
+        <div class="col-30 mt-3 scrolling-column1">
+            <div class="documentation_image">
+                <img src="images/progetto-(3).gif">
+                <p><small>Cover image - Art Deco style</small></p>
+            </div>
+            <div class="documentation_image">
+                <img src="images/normandie.jpg">
+                <p><small>A.M. Cassandre, Normandie, France, 1935</small></p>
+            </div>
+            <div class="documentation_image">
+                <img src="images/st_jean.jpg">
+                <p><small>Rob Mallet Stevens, St Jean De Luz, France, 1928</small></p>
+            </div>
+            <div class="documentation_image">
+                <img src="images/candee.jpg">
+                <p><small>Franco Barberis, Candee, Switzerland, 1929</small></p>
+            </div>
+            <div class="documentation_image">
+                <img src="images/grand_prix.jpg">
+                <p><small>Johannes Handschin, Grand Prix Montreux, Switzerland, 1934</small></p>
+            </div>
+        </div>
+
+    </div> 
+
+    <div class="grid documentation-grid pt-4">
+        <div class="col-70 mt-3 ">
+            <div class="fix-me" id="fix-me2">
+               <p>Talking about the contact picture in the footer, the stylization of the figure wants to be a reminder of 
+                the poster that <b>A.M. Cassandre</b> designed for the brand Grand Sport in 1925. 
+                It seems that the author attempted to use the least number of lines as possible to depict a human face, infact the eye is simply depicted with a dot.
+                Here the Art Deco <b>stylization</b> and the typical use of <b>geometric lines</b> is evident.
+               </p>
+            </div>
+        </div>
+        
+        <div class="col-30 mt-2 scrolling-column2">
+            <div class="documentation_image">
+                <img src="images/marta_art_deco.png">
+                <p><small>Contact card image - Art Deco style</small></p>
+            </div>
+            <div class="documentation_image">
+                <img src="images/grand_sport.jpg">
+                <p><small>A.M. Cassandre, Grand Sport - La Casquette, France, 1925</small></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid documentation-grid pt-4">
+      <div class="col-70 mt-3 ">
+        <div class="fix-me" id="fix-me3">
+            <p>Another aspect typical of the Art Deco style was the influence
+            of the <b>Egyptian aesthetic</b>, emaphsized by the discovery of King Tut’s tomb in
+            1922. At the time the world was obsessed with the Egyptian
+            culture and this definitely crept through into
+            Art Deco designs. Triangles and pyramid shapes,
+            fanning reeds and stylized wings all made their
+            influence on architecture, furniture, fashion and
+            design at the time.<br>
+            In particular, the squared border in the issue page wanted to be a 
+            reminder of this Egyptian influence and the main source of inspiration 
+            has been the poster <b><em>Hygiene Tentoonstelling</em> (1920) by Pieter Hofman</b>. 
+            </p>
+        </div>
+      </div>
+      <div class="col-30 mt-2 scrolling-column3">
+          <div class="documentation_image">
+              <img src="images/hygiene.jpg">
+              <p><small> Pieter Hofman - Hygiene Tentoonstelling, 1920</small></p>
+          </div>
+          <div class="documentation_image">
+            <div class="doc-square-deco-container container">
+              <div class="doc-square-deco-content">Border of the issue page</div>
+              <div class="doc-square-deco-inner"></div>
+              <div class="doc-square-deco-square-left-top"></div>
+              <div class="doc-square-deco-square-left-bottom"></div>
+              <div class="doc-square-deco-square-right-top"></div>
+              <div class="doc-square-deco-square-right-bottom"></div>
+              <div class="doc-square-deco-tall"></div>
+              <div class="doc-square-deco-wide"></div>
+            </div>
+          </div>
+      </div>  
+    </div>
+
+    <div class="grid documentation-grid pt-4">
+      <div class="col-70 mt-3 ">
+          <div class="fix-me" id="fix-me4">
+            <h3>Color Palette</h3>
+            <p> The aforementioned poster had also an important role in the choice of the color 
+              palette of the current website's Art Deco style.<br>
+              In general, <b>metallic colours</b> evoquing the Machine Age were common in design, especially in graphic design and typography.
+              Moreover, rich, <b>vibrant colours</b> were used quite a bit for fashion and decoration, an influence
+              that came from the Fauvism art style which was popular in the years 1905-1910. <br>
+              However for Urban Scrawl I decided to stick to the following assertion:</br>
+              <b><em>"The Art Deco typically contrasted warm tans and pale shades of green and blue either with shiny metals or with accents of strong 'pure' colors — vehement reds, cobalt blues, or golden yellows."</em></b> (The National Trust Guide to Art Deco in America, David Gebhard, Preservation Press, John Wiley & Sons, Inc., NY: 1996
+              3. Report, p. 50.).<br>
+              So I wanted to accentuate the strike between light, creamy colors, like #ccb688 and #fffff0, and more intense and vivid colors like the burgundy and the bright blue, trying to obtain a sophisticated and elegant composition.
+            </p>
+          </div>
+        </div>
+          <div class="col-30 mt-2 scrolling-column4">
+              <div class="documentation_image">
+                  <img src="images/800020.png">
+                  <p><small> #800020 - Dark red</small></p>
+              </div>
+
+            <div class="documentation_image">
+                <img src="images/ccb688.png">
+                <p><small> #ccb688 - Slightly desaturated orange</small></p>
+            </div>
+
+
+            <div class="documentation_image">
+                <img src="images/0b1764.png">
+                <p><small>#0b1764 - Very dark blue</small></p>
+            </div>
+      </div>
+          
+
+    </div> 
+    <div class="grid documentation-grid pt-4">
+        <div class="col-70 mt-3 ">
+            <div class="fix-me" id="fix-me5">
+                <h3>Font</h3>
+                <h4>Bifur</h4>
+               <p>The style of Art Deco type was created by one man – <b>A.M. Cassandre</b>.<br>
+                In <b>1929</b>, Charles Peignot, director of the French type foundry Deberny & Peignot, sponsored Cassandre’s experimental new display typeface called <b>Bifur</b>.<br>
+                Bifur font combines very thick strokes with thinner horizontal or vertical lines, it is known for its bold and unconventional aesthetic, making it a notable example of Art Deco typography.
+                <b>Designed for advertising</b>, it was intended to surprise: its characters do not have the appearance of conventional letters forms and they almost look as if they had been produced by a typographic accident.<br>
+                Cassandre created Bifur by simplifying the architecture of the alphabet. He stressed its geometric qualities, eliminated all horizontal lines that were not absolutely necessary and filled in the spaces inside the letters with grey or some other colors.<br>
+                To render Bifur instantly legible, Cassandre based his design on sans serifs. Actually one might say that he reinvented the sans serif, breathing new life into it and restoring its original identity by imparting a fresh and vibrant appearance (<a href="https://www.cassandre-france.com/amc-by-henri-mouron" target="_blank">https://www.cassandre-france.com/amc-by-henri-mouron</a>, chapter 2).
+               </p>
+               <h4>Peignot</h4>
+               <p><b>Peignot</b> has been created always by <b>Cassandre</b> in <b>1937</b>.<br>
+                Cassandre's quest for a spare and <b>elegant style</b> led him to create Peignot, a typeface intended for various purposes, including book work.
+                <br>Cassandre believed in restoring the dignity of the written word by returning to the Roman alphabet and eliminating decorative accretions; he spent years reflecting on the decline of the Roman alphabet, emphasizing the importance of contrast between thick and thin strokes. He argued for the legibility of lowercase letters, proposing a return to classical shapes while preserving ascenders and descenders (<a href="https://www.cassandre-france.com/amc-by-henri-mouron" target="_blank">https://www.cassandre-france.com/amc-by-henri-mouron</a>, chapter 2 <em>Suite</em>).<br>         
+                This sans-serif typeface, as envisioned by Cassandre, exhibits a unique combination of differently weighted lines within each letter, showcasing its calligraphic roots. Notably, there is a distinct contrast between the uppercase and "lowercase."<br>
+                It has an elegant appearance but at the same time posseses a playful and dynamic quality, thanks to its distinctive combination of "mixed-case" (some lowercase Roman alphabet shapes replaced by capitals) and elongated ascenders and descenders.
+                </p>
+            </div>
+        </div>
+        
+        <div class="col-30 mt-3 scrolling-column5">
+            <div class="documentation_image">
+                <img src="images/bifur.jpg">
+                <p><small>Bifur (1929) by A.M. Cassandre</small></p>
+            </div>
+            <div class="documentation_image">
+                <img src="images/peignot.webp">
+                <p><small>Peignot (1937) by A.M. Cassandre</small></p>
+            </div>
+        </div>
+
+      </div> 
+
+      <div class="grid documentation-grid pt-4">
+        <div class="col-100 p-3">
+            <h2>Punk Flyer and DIY Zine Aesthetic</h2>
+            <p>The overall style of the second theme aims to emulate the style of a zine, specifically a <b>punkzine</b> - a small circulation publication closely tied to the punk subculture and hardcore punk music genre.
+              Starting in the <b>1970s</b>, the DIY aesthetic of the punk subculture created a thriving underground press. <br>
+              A pletora of fanzines emerged during the wave of punk in Britain (1976-79), in a context of substantial cultural, social and political change where punk reacted against the 
+              'modern world' and the abstortion of 'hippy culture' into the mainstream. Punk also reacted against the mid-1970s 'hit parade' rock music scene: it was seen as an alternative to the 
+              mainstream music industry and a breath of fresh air with its independent and 'do-it-yourself' approach.<br>
+              Fanzines adopted the same <b>independent and DIY approach</b> that punk musicians had espoused: they offered fans a free space for developing ideas and a visual space not limited by formal design rules and visual expectations.
+            </p>
+        </div>
+      </div>
+
+      <div class="grid documentation-grid pt-4">
+        <div class="col-70 mt-2">
+            <div class="fix-me" id="fix-me6">
+                <h3>Images and Layout</h3>
+                <p>Punk fanzines attempted to capture the exciting, chaotic feel of punk music at the time and recreate it visually.
+                  In terms of design, images and illustrations in punkzines are characterized by a <b>do-it-yourself attitude</b>, often featuring black and white photographs, punk symbols like safety pins and anarchy signs, and hand-drawn or collage elements. Layouts are <b>asymmetrical and irregular</b>, 
+                  breaking away from traditional design norms. Torn edges, irregular shapes, and overlapping elements contribute to the overall chaotic and rebellious aesthetic. Also Text elements play a crucial role in punkzines, with bold statements, provocative slogans, and a mix of fonts reflecting the anti-establishment attitude.<br>
+                  I tried to gather all these elements in the design of the punkzine's inspired cover of the present website: <b>overlapping images with torn edges</b> like if they were cut and paste from other publications, <b>handwritten slogans</b> and the asymmetrical arrangement of the page are just few features of the punk fanzines' diverse and creative layouts.
+                  In particular, I took inspiration from the cover of the issue 10 of <em>Panache</em>.
+                </p>
+                <p>
+                  As already mentioned, punk fanzines, emblematic of the DIY ethos, were often crafted by hand and commonly reproduced through inexpensive <b>photocopying processes</b>. The photocopying techniques prevalent during that era introduced distinctive artifacts, including <b>grain, distortion, and rough textures</b>. These inherent imperfections became integral to the aesthetic of the zine, contributing to its authenticity and endowing it with a vintage quality.
+                  In an effort to evoke the spirit of these handmade punk fanzines, I made the decision to extend this aesthetic to the entire body of the content. I achieved this by applying an image with a photocopy texture as the background, employing the mix-blend-mode CSS property set to multiply. This specific setting results in a blending effect that multiplies the color values of the element's pixels with those of the underlying pixels in the background. 
+                </p>
+            </div>
+        </div>
+        <div class="col-30 mt-3 scrolling-column6">
+            <div class="documentation_image">
+                <img src="images\Tavola disegno 1.png">
+                <p><small>Cover image - Punkzine style</small></p>
+            </div>
+            <div class="documentation_image">
+                <img src="images/panache10.jpg">
+                <p><small>Cover <em>Panache</em> Nr.10, London, 1978</small></p>
+            </div>
+            <div class="documentation_image">
+              <img src="images/sunday_mirra_2_0026.jpg">
+              <p><small><em>Sunday Mirra</em>, issue 2, page 26, 1977</small></p>
+          </div>
+        </div>
+
+    </div> 
+    <div class="grid documentation-grid pt-4">
+      <div class="col-70 mt-2">
+          <div class="fix-me">
+              <h3>Color Palette</h3>
+              <p>
+                The main colors used for recreating the punkzine's aesthetic are shades of black and white, with occasional splashes of neon colors, like for highlighting the metadata in the text to give the idea that an highlighter was used for that. 
+                Infact, in the world of punkzines, <b>black</b> is a foundational color that signifies rebellion against societal norms and mainstream conventions. It embodies a rejection of the status quo and an embrace of an alternative, countercultural mindset. While <b>white</b> is like a canvas for creativity, if the black embodies the disruption of the 
+                existing conventions and rules, the white is the symbol of the creation of a new world, the expression of oneself personality without adhering to traditional design standards.
+                The use of <b>neon colors</b>, mimicking the effect of using a highlighter, not only adds a practical layer to the design, aiding in the organization of information, but also reinforces the hands-on and do-it-yourself approach characteristic of punkzines. It suggests that the zine creator has taken a physical highlighter to the pages, underscoring the tactile and DIY nature of the medium.
+              </p>             
+          </div>
+      </div>
+      </div>
+
+  </div> 
+  <div class="grid documentation-grid pt-4">
+    <div class="col-70 mt-2">
+        <div class="fix-me" id="fix-me7">
+            <h3>Font</h3>
+            <p>Articles, reviews, and band interviews were often <b>handwritten</b> or <b>typed using typewriters</b>, adding a personal and gritty touch to the content. For this reason, for the most part of the text I decided to use 
+            a font that replicates the writing of a typewriter (<a href="https://www.dafont.com/elegant-typewriter.font" target="_blank">Elegant Typewriter</a> by Lukas Krakora). But I modified the font, using an handwritten 'n'
+            because I wanted to remind to a particular punkzine, that is <em>Chainsaw</em>, a punkzine edited by "Charlie Chainsaw" and published in suburban Croydon from 1977 to 1984. For this zine, after the 'n' key broke on the 
+            editor's typewriter, the typographic treatment mixing an handwritten 'N' with the typewritten forms became a stylised trademark.
+            </p>
+            <p>For the headings I used <a href="https://www.dafont.com/punk-west.font">Punk West</a> by WOODCUTTER, which looks like <b>ransom note-style typography</b>: letters cut from different sources and pasted together was a popular choice in punkzines for headings and titles.</br>
+              Furthermore, for subheadings and images' descriptions the font is <a href="https://www.dafont.com/handwritten.font">Handwritten</a> by Brian Esquivel, that, as the title suggests, is an handwritten font and handwritten annotations, as well as, hand-drawn illustrations, band logos, and punk-inspired graphics were common in zines and contributed to make each copy unique.
+            </p>
+            
+        </div>
+    </div>
+    <div class="col-30 mt-3 scrolling-column7">
+        <div class="documentation_image">
+            <img src="images\chainsaw.png">
+            <p><small>Page detail, <em>Chainsaw Nr. 3</em>, November/December, London, 1977 </small></p>
+        </div>
+        <div class="documentation_image">
+          <img src="images\punkwest.jpg">
+          <p><small>Punkwest by WOODCUTTER</p>
+      </div>     
+    </div>
+
+</div> 
+
+
+
+
+  
+    
+
+    <!--- STYLE BUTTONS -->
+    <div id="button-container" class="style-button-container">
+      <div>
+        <!-- Pulsanti per cambiare stile -->
+        <button class="style-button" id="default-style" style="display: none;"><p>Default</p></button>
+        <button class="style-button" id="punkzine-style" style="display: none;"><p>Punkzine</p></button>
+        <button class="style-button" id="artDeco-style" style="display: none;"><p>Art<br>Deco</p></button>
+        <!-- Pulsante del contenitore -->
+        <button class="container-button" id="container-button"></button>
+      </div>
+      <div>
+        <button id="go_top" onclick="scrollToTop()" style="display: none;"></button>
+      </div>
+    </div>
+
+  
+    
+
+
+    <!--- FOOTER -->
+    <footer class="footer pt-4" id="footer">
+      <div class="triple-diamond-deco-container container">
+        <div class="left-line"></div>
+        <div class="right-line"></div>
+        <div class="small-diamond-left"></div>
+        <div class="small-diamond-right"></div>
+        <div class="large-diamond"></div>
+      </div>
+      <div class="grid mt-2">
+        <div class="col-70">
+          <h3>About Urban Scrawl</h3>
+          <p id="disclaimer">This website is a project developed by Marta Soricetti for the 2022/2023 
+            course <a href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/454464" target="_blank">Information Modeling and Web Technologies</a> held by Professor <a href="https://www.unibo.it/sitoweb/fabio.vitali/en" target="_blank">Fabio Vitali</a>. <br>
+            The purpose of this website is to explore various types of typographic styles and layouts for text documents. <br> 
+            The documents here contained have been selected for their lenght and complexity and their publication in this website is not intended to be an alternative or replace their original locations:
+            <ul>
+              <li><em>The King of Kowloon: my search for the cult graffiti prophet of Hong Kong</em>: <a href="https://www.theguardian.com/world/2022/jun/23/the-king-of-kowloon-my-search-for-the-cult-graffiti-prophet-of-hong-kong" target="_blank">The Guardian</a></li>
+              <li><em>Dreamers and Donald Trump: Anti-Trump Street Art Along the US-Mexico Border</em>: <a href="https://repository.upenn.edu/entities/publication/0fc76581-3f21-46af-ae36-5f2f0776917d" target="_blank">ScholarlyCommons</a></li>
+              <li><em>Public-making in a pandemic: The role of street art in East African countries</em>: <a href="https://www.sciencedirect.com/science/article/pii/S0962629822001068?via%3Dihub" target="_blank">ScienceDirect</a></li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-30">
+          <div class="contact-card">
+            <div class="img"></div>
+            <div class="contact-details">
+              <h4>Marta Soricetti</h4>
+              <a href="mailto:marta.soricetti@studio.unibo.it"><i class="icon fa fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/marta-soricetti-091495184/" target="_blank"><i class="icon fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mt-3" id="copyright">&copy; 2024 - Urban Scrawl</p>
+    </footer>
+
+    <script src="scripts/general.js"></script>
+    <script src="scripts/documentation.js"></script>
+</body>
+</html>

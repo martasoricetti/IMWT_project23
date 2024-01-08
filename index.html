@@ -13,8 +13,10 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
-    <link rel="stylesheet" href="styles/style1.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/style1.css" id="historical_css">
     <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script>
+    <script src="https://kit.fontawesome.com/3bd97c56ef.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -22,15 +24,15 @@
     <header class="header">
       <div class="header__content">
         <a class="header__logo" href="">
-          <img src="../images/scrawl2.png" alt="logo website">
+          <img src="/images/scrawl2.png" alt="logo website" id="logo">
         </a>
         <ul class="header__menu">
           <li><a href="">Home</a></li>
-          <li><a href="articles/article.html" >Articles</a></li>
-          <li><a href="">Disclaimer</a></li>
+          <li><a href="articles/article.html" >Issues</a></li>
+          <li><a href="documentation.html">Documentation</a></li>
         </ul>
         <div class="header__quick">
-          <a href="">Contacts</a>
+          <a href="#footer">About</a>
           <div class="icon-hamburger">
             <span></span>
             <span></span>
@@ -41,10 +43,11 @@
 
 
     <!-- COVER -->
-    <div class="cover" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('../images/muroNero.jpg');">
-      <div class="cover__content p-3">
+    <div class="cover" id="cover_index">
+      <!--<img src="images/progetto-(1).gif" id="cover_art_deco" class="mt-4">-->
+      <div class="cover__content p-3" id="cover_text_index">
         <h1 class="pt-4"> Urban Scrawl</h1>
-        <h4> A journey through cities, time and stories <br> to discover something new about something that someone may dismiss as "scrawls" <br> but is actually real art. </h4>
+        <h4> A journey through cities, time and stories <br> to learn about something that someone may dismiss as "scrawls" <br> but is actually real art. </h4>
         <a href="#spacer_map" class="button">Get started</a>
       </div>
     </div>
@@ -54,84 +57,168 @@
 
     <div class="grid">
       <div class="col-30 p-3">
-        <h2>Where?</h2>
-        <h4>Discover the world of street art with our interactive map!</h4>
-        <p style="text-align: justify;">Explore the locations of the vibrant murals and street art featured in our articles. Click on the markers to learn more about each artwork and to go straight to the article that talks about it. Dive into the urban art scene and uncover the creativity that adorns our cities. Happy exploring!
-        </p>
+        <div class="fix-me" id="fix-me1">
+          <h2>Where?</h2>
+            <h4>Discover the world of street art with our interactive map!</h4>
+            <p style="text-align: justify;">Explore the locations of the vibrant murals and street art featured in our articles. Click on the markers to learn more about each artwork and to go straight to the article that talks about it. Dive into the urban art scene and uncover the creativity that adorns our cities. Happy exploring!
+            </p>
+        </div>
         
       </div>
-      <div id ="map" class="col-70"></div>
+        <div id ="map" class="col-70 scrolling-column1"></div>
+      </div>
     </div>
     
-    <!-- FIRST SECTION -->
+    <!-- RECENT ARTICLES -->
     <div class="grid pt-4">
-        <div class="col-50">
-          <h2>What?</h2>
-            <a href="" class="button mb-2">Call to action</a>
+      <div class="col-30 p-3">
+        <div class="fix-me" id="fix-me2">
+            <h2>What?</h2>
+            <h4>Explore the Vibrant World of Street Art</h4>
+            <p>From colorful murals that transform neighborhoods to thought-provoking stencils that convey powerful messages, our street art articles provide insight into this dynamic and ever-evolving art form. <b>Stay updated with our latest issues!</b></p>
+            <div class="contain">
+              <p>
+                  <a href="articles/article.html" class="roman-link button">
+                      <span class="bg-large">
+                          <span class="roman-top-left"></span>
+                          <span class="roman-bottom-right"></span>
+                      </span>
+                      <span class="bg-tall">
+                          <span class="roman-top-left"></span>
+                          <span class="roman-bottom-right"></span>
+                      </span>
+                      <span class="bg-medium">
+                          <span class="roman-top-left"></span>
+                          <span class="roman-bottom-right"></span>
+                      </span>
+                      Go to issues' page
+                  </a>
+              </p>
+            </div>
+        </div> 
+      </div>
+
+        
+      <div class="col-70 scrolling-column2" id="last_articles">
+          
+      </div>
+      
+    </div>
+
+    <!--STYLE SECTION-->
+    <div class="grid pt-4">
+      <div class="col-30 p-3">
+        <div class="fix-me" id="fix-me3">
+          <h2>When?</h2>
+          <h4>Time travel is now possible</h4>
+          <p>This website doesn’t just offer articles; it offers a journey through time! <br>
+            Transport yourself to different eras, each marked by unique artistic movements, enjoy unique perspectives 
+            to the vibrant world of murals and graffiti.
+            Click on the button below to know more about the historical and graphical influences behind each style.
+          </p>
         </div>
-        <div class="col-50">
-          <div class="cover" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random');">
-            <div class="cover__content">
-              <h1> Cover title</h1>
-              <h2> Subtitle </h2>
+      </div>
+      <div class="col-70 scrolling-column3 mb-3">
+        <div class="timeline">
+          <div class="t_container left-container">
+              <img src="images/chrysler-building_white.png" alt="">
+              <div class="textbox">
+                <div class="triple-deco-container container">
+                    <div class="triple-deco-content"><h3>Art Deco</h3></div>
+                    <div class="triple-deco-tall"></div>
+                    <div class="triple-deco-mid"></div>
+                    <div class="triple-deco-wide"></div>
+                </div>
+                  <small>1910s-1950s</small>
+                  <p><b>Art Deco</b>, short for the French <em>Arts Décoratifs</em>, became the dominant artistic style of Europe and America 
+                    up through the beginning of Worl War II. Devoted to the strong lines and geometric structures of the Machin Age, it was a strong departure 
+                    from the sinuous, natural and elegant forms of its predecessor, Art Nouveau. It influenced everything from fashion to architecture, but the principal source of 
+                    inspiration for the graphical choices behind the "ArtDeco style" of this website is its appearance in posters. 
+                    <br>
+                  </p>
+                  <span class="left-container-arrow"></span>
+              </div>
+          </div>
+          <div class="t_container right-container">
+              <img src="images/diy-1-128.png" alt="">
+              <div class="textbox">
+                <div class="triple-deco-container container">
+                  <div class="triple-deco-content"><h3>Punk Flyer and DIY Zine Aesthetic</h3></div>
+                  <div class="triple-deco-tall"></div>
+                  <div class="triple-deco-mid"></div>
+                  <div class="triple-deco-wide"></div>
+                </div>
+                  <small>1970s-1980s</small>
+                  <p>Since the early 1930s, fan magazines or 'fanzines' have played a pivotal role in establishing a vibrant communication network within underground culture. 
+                    These homemade publications have been instrumental in disseminating information and personal viewpoints on diverse subjects, ranging from music and football 
+                    to anti-capitalism and thrift store shopping.
+                    However, it is within the subculture of punk music that the DIY ethos truly found its expression. In the late 1970s, A4-sized, stapled, and photocopied fanzines embraced 'do-it-yourself (DIY)' production techniques, employing cut-n-paste letterforms, collaged images, hand-scrawled and typewritten texts. This amalgamation resulted in a distinctive graphic design aesthetic, creating a recognizable visual style affiliated with punk fanzines.
+                  </p>
+                  <span class="right-container-arrow"></span>
+              </div>
+          </div>
+      </div>
+
+
+      </div>
+      </div>
+    </div>
+
+    <!--- STYLE BUTTONS -->
+    <div id="button-container" class="style-button-container">
+      <div>
+        <!-- Pulsanti per cambiare stile -->
+        <button class="style-button" id="default-style" style="display: none;"><p>Default</p></button>
+        <button class="style-button" id="punkzine-style" style="display: none;"><p>Punkzine</p></button>
+        <button class="style-button" id="artDeco-style" style="display: none;"><p>Art<br>Deco</p></button>
+        <!-- Pulsante del contenitore -->
+        <button class="container-button" id="container-button"></button>
+      </div>
+      <div>
+        <button id="go_top" onclick="scrollToTop()" style="display: none;"></button>
+      </div>
+    </div>
+
+
+
+    <!--- FOOTER -->
+    <footer class="footer mt-4" id="footer">
+      <div class="triple-diamond-deco-container container">
+        <div class="left-line"></div>
+        <div class="right-line"></div>
+        <div class="small-diamond-left"></div>
+        <div class="small-diamond-right"></div>
+        <div class="large-diamond"></div>
+      </div>
+      <div class="grid mt-2">
+        <div class="col-70">
+          <h3>About Urban Scrawl</h3>
+          <p id="disclaimer">This website is a project developed by Marta Soricetti for the 2022/2023 
+            course <a class="punkzine-highlight" href="https://www.unibo.it/en/teaching/course-unit-catalogue/course-unit/2022/454464" target="_blank">Information Modeling and Web Technologies</a> held by Professor <a class="punkzine-highlight" href="https://www.unibo.it/sitoweb/fabio.vitali/en" target="_blank">Fabio Vitali</a>. <br>
+            The purpose of this website is to explore various types of typographic styles and layouts for text documents. <br> 
+            The documents here contained have been selected for their lenght and complexity and their publication in this website is not intended to be an alternative or replace their original locations:
+            <ul>
+              <li><em>The King of Kowloon: my search for the cult graffiti prophet of Hong Kong</em>: <a class="punkzine-highlight" href="https://www.theguardian.com/world/2022/jun/23/the-king-of-kowloon-my-search-for-the-cult-graffiti-prophet-of-hong-kong" target="_blank">The Guardian</a></li>
+              <li><em>Dreamers and Donald Trump: Anti-Trump Street Art Along the US-Mexico Border</em>: <a class="punkzine-highlight" href="https://repository.upenn.edu/entities/publication/0fc76581-3f21-46af-ae36-5f2f0776917d" target="_blank">ScholarlyCommons</a></li>
+              <li><em>Public-making in a pandemic: The role of street art in East African countries</em>: <a class="punkzine-highlight" href="https://www.sciencedirect.com/science/article/pii/S0962629822001068?via%3Dihub" target="_blank">ScienceDirect</a></li>
+            </ul>
+          </p>
+        </div>
+        <div class="col-30">
+          <div class="contact-card">
+            <div class="img"></div>
+            <div class="contact-details">
+              <h4>Marta Soricetti</h4>
+              <a href="mailto:marta.soricetti@studio.unibo.it" class="fa fa-envelope"></a>
+              <a href="https://www.linkedin.com/in/marta-soricetti-091495184/" target="_blank" class="fa fa-linkedin"></a>
             </div>
           </div>
         </div>
-    </div>
-
-    <!-- SECOND SECTION -->
-
-    <div class="grid pt-4">
-        <div class="col-50">
-            <h3>Lorem ipsum</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, exercitationem ad ab maxime animi dicta architecto incidunt impedit eaque maiores debitis dolore. Eveniet ut possimus nemo fuga corrupti omnis id?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, exercitationem ad ab maxime animi dicta architecto incidunt impedit eaque maiores debitis dolore. Eveniet ut possimus nemo fuga corrupti omnis id?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, exercitationem ad ab maxime animi dicta architecto incidunt impedit eaque maiores debitis dolore. Eveniet ut possimus nemo fuga corrupti omnis id?</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, exercitationem ad ab maxime animi dicta architecto incidunt impedit eaque maiores debitis dolore. Eveniet ut possimus nemo fuga corrupti omnis id?</p>
-        </div>
-        <div class="col-50">
-            <div class="cover" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random');">
-              <div class="cover__content">
-                <h1> Cover title</h1>
-                <h2> Subtitle </h2>
-              </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- THIRD SECTION -->
-
-    <div class="grid pt-4">
-        
-        <div class="col-50">
-            <div class="cover" style="background-image:linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random');">
-              <div class="cover__content">
-                <h1> Cover title</h1>
-                <h2> Subtitle </h2>
-              </div>
-            </div>
-        </div>
-        <div class="col-50">
-            <div class="p-4">
-                <h2>Lorem ipsum</h2>
-                <h3>Lorem ipsum</h3>
-                <a href="" class="button">Call to action</a>
-            </div> 
-        </div>
-    </div>
+      </div>
+      <p class="mt-3" id="copyright">&copy; 2024 - Urban Scrawl</p>
+    </footer>
     
-    <!--- STYLE BUTTONS -->
-    <div id="button-container" class="style-button-container">
-      
-      <!-- Pulsanti per cambiare stile -->
-      <button class="style-button" id="default-style"></button>
-      <button class="style-button" id="dark-style"></button>
-      <!-- Pulsante del contenitore -->
-      <button class="container-button" id="container-button"></button>
-    </div>
-
     <script src="scripts/map.js"></script>
     <script src="scripts/general.js"></script>
-
 </body>
 </html>
