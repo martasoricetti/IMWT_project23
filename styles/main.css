@@ -3,6 +3,10 @@
 @font-face { font-family: Typewritern; src: url('Typewritten.ttf');}
 @font-face { font-family: DOCALLISME ON STREET; src: url('DocallismeOnStreet-ZVO1Z.otf'); }
 @font-face {font-family: Peignot; src: url('Peignot.ttf');}
+@font-face {
+  font-family: Delauney;
+  src: url('DelauneyRegular-8MArM.ttf');
+}
 
 /* ! Reset per diversi browser*/
 
@@ -145,7 +149,7 @@ padding:10px 0 20px;
 
 #punkzine-style{background-image: url('../images/punkzine_background.jpg'); background-position: 0 0; background-size: 100px;}
 #punkzine-style:hover{background-image: none;}
-#punkzine-style p{font-family: 'Handwritten'; font-size: 23px; font-weight: bold;}
+#punkzine-style p{font-family: 'PunkWest'; font-size: 22px;}
 
 /*ARTICLES*/
 
