@@ -3,7 +3,7 @@
         {
             "number": 1,
             "title": "Street Art as a voice in the public forum",
-            "cover":"../images/img_fonti.jpg",
+            "cover":"images/img_fonti.jpg",
             "issue_articles": [{
                 "title":"The King of Kowloon: my search for the cult graffiti prophet of Hong Kong",
                 "url":"articles/article_king.html",
@@ -32,7 +32,7 @@
         {
             "number": 2,
             "title": "Available soon",
-            "cover":"../images/coming_soon.avif",
+            "cover":"images/coming_soon.avif",
             "issue_articles": []
 
         },
