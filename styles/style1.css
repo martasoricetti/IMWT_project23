@@ -57,6 +57,13 @@ a{color: #44D044;}
 
 /* !MAP */
 .popup .button {font-size: 0.55rem;}
+.cycle a{
+  color:#01bd01;
+}
+.cycle a:hover{
+  font-weight: bold;
+}
+
 
 /* ! "CHOOSE THE STYLE" BUTTONS*/
 
@@ -204,8 +211,10 @@ table th {
 .documentation-grid h3{
   font-size: 50px;
 }
-.documentation-grid h2{
-  font-size: 90px;
+
+@media (max-width: 991px) {
+  .documentation-grid h3{font-size:35px;}
+  .documentation-grid h4{font-size:25px;}
 }
 
 .documentation-grid a {
@@ -221,7 +230,8 @@ table th {
 }
 .footer{background-color: var(--menu-bg);}
 .footer p{color:var(--menu-color); opacity: 0.8}
-.footer .icon{color:#01bd01}
 #disclaimer{font-size: 0.9rem;}
 .footer h3{font-family:'DOCALLISME ON STREET'; color: var(--menu-color); opacity: 0.8;}
 .footer ul{color: var(--menu-color); opacity: 0.8;}
+
+.fa{background-color:#01bd01; color:#0e0e0e;}

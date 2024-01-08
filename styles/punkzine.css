@@ -4,7 +4,7 @@ body{background-image: url('../images/texture_photocopy.png'); background-size: 
 /* MENU*/
 /* definizione del menu in modalità desktop*/
 /*definizione variabili css*/
-:root {--quick-color:red; --menu-bg: #292929; --menu-color:white; --menu-hover:#44D044}
+:root {--menu-bg: #292929; --menu-color:white;}
 
 .header__quick{color:var(--menu-color); font-size: 38px; font-family: 'PunkWest';}
 
@@ -133,6 +133,13 @@ p {font-size: 1rem;margin-bottom:1rem; line-height: 1.2;}
   font-family: 'Handwritten';
   font-size: 1.5rem;
 }
+
+.art-deco-image img{
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border:solid 5px rgb(14, 14, 14);
+  padding:10px;
+}
+
 
 /*different highlight styles for each metadata class*/
 .highlight_places{
@@ -264,6 +271,9 @@ p {font-size: 1rem;margin-bottom:1rem; line-height: 1.2;}
   .sidebar.open{
     background-color: #fffcfc;
   }
+  #article_container .article_content{
+    column-count: 1;
+  }
 }
 
 /*ARTICLE*/
@@ -276,6 +286,7 @@ p {font-size: 1rem;margin-bottom:1rem; line-height: 1.2;}
 #article img{
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+
 }
 
 #article h1{
@@ -326,9 +337,12 @@ table th {
 .documentation-grid h3{
   font-size: 50px;
 }
-.documentation-grid h2{
-  font-size: 90px;
+
+@media (max-width: 991px) {
+  .documentation-grid h3{font-size:40px;};
+  .documentation-grid h4{font-size:40px;}
 }
+
 .documentation-grid b{
   background-image: linear-gradient(
     to right,

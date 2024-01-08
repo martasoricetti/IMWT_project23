@@ -17,7 +17,8 @@ var geoJson = {
                 ['images/pig_trump.png','<em>Pig Trump</em>. Trump painted in a revolting way, inviting mockery as if he’s been caught with his pants down.'],
                 ['images/humptydumpty.png','<em>Humpty Dumpty Trump</em>. Trump diminished in size and nursery rhyme imagery, suggesting his failure is certain, imminent, and irreversible.']
               ],
-			'article':''
+			'article':'Dreamers and Donald Trump: Anti-Trump Street Art Along the US-Mexico Border',
+			'issue':'1'
           }
       	},
 		{
@@ -32,7 +33,8 @@ var geoJson = {
 				['images/chulk_trump.png', '<em>Chalk Trump</em>. The figure of Trump is shown on his knees holding his penis, which is pointed towards a globe.'],
 				['images/sponge_trump.png', '<em>SpongeBob Trump</em>. SpongeBob Trump. Image ridiculing Presidents Trump and Peña Nieto, specifically portraying their ineptitude and racism.']		
 			],
-			'article':''
+			'article':'Dreamers and Donald Trump: Anti-Trump Street Art Along the US-Mexico Border',
+			'issue':'1'
 		}
 		},
 		{
@@ -42,13 +44,14 @@ var geoJson = {
 				'title': 'Tijuana, Mexico',
 				'images': [
 					['images/tijuana_wall.png','<em>Tijuana Wall Text Sample</em>. From left to right the text reads “Somos America,” “Tear down the wall,” “El arte es una extension de ser,” “Resiste sin odio, sin muros,” “No wall,” and “Haz mas arte.”'],
-					['images/butterfly.png','. <em>Monarch Butterfly</em>. A dignified symbol of migration. <em>Pinky Kiss</em>. References the separation experienced by family members who are only able to link fingers when they meet at the wall.'],
+					['images/butterfly.png','<em>Monarch Butterfly</em>. A dignified symbol of migration. <em>Pinky Kiss</em>. References the separation experienced by family members who are only able to link fingers when they meet at the wall.'],
 					['images/love_trumps_hate.png','<em>Love Trumps Hate</em>. This hybrid flag shows the unity of the two countries despite what is perceived as hateful speech by Donald Trump.'],
 					['images/fuckTrump.png', '<em>“Fuck Trump” on Grey Wall</em>. Expletive written on possible sight where the Rape Trump mural was.'],
 					['images/rape_trump.png', '<em>Rape Trump</em>. A direct reaction to Trump’s claim that Mexican immigrants are rapists. The smaller text is directions to Trump Tower in New York City.'],
 					['images/trump_and_four_women.png', '<em>Trump and Four Women of Color</em>. Large mural of Trump alongside four women from Syria, China, Guatemala, and Mexico. Smaller text in the right lower corner reads: “Todos somos migrantes,” which means “We’re all migrants.”']				
 				],
-				'article':''
+				'article':'Dreamers and Donald Trump: Anti-Trump Street Art Along the US-Mexico Border',
+				'issue':'1'
 			}
 		},
 		{
@@ -62,7 +65,8 @@ var geoJson = {
 					['images/dream_killer.png','<em>The Dream Killer</em>. Large mural of Trump uprooting humans/trees on the US side and dumping them in Mexico.'],
 					['images/dreamers.png', '<em>Dreamers</em>. Large mural of Trump as a clown, luring in children with red balloons.']				
 				],
-				'article':''
+				'article':'Dreamers and Donald Trump: Anti-Trump Street Art Along the US-Mexico Border',
+				'issue':'1'
 			}
 		},
 	   	{
@@ -70,7 +74,8 @@ var geoJson = {
           "geometry": { "type": "Point", "coordinates": [114.166667, 22.25]},
           "properties": {
             'title': 'Hong Kong',
-			"article":'',
+			"article":'The King of Kowloon: my search for the cult graffiti prophet of Hong Kong',
+			'issue':'1',
 			"images": [
 				['images/king_of_kowloon.avif', '<em>King of Kowloon photograph</em>. Tsang Tsou-choi, better known as the "King of Kowloon", pictured in 2003.'],
 				['images/3504.avif', '<em>A King of Kowloon\'s work</em>. Some of Tsang\'s work at a Star Ferry pier in Hong Kong.'],
@@ -86,7 +91,8 @@ var geoJson = {
 			"geometry": { "type": "Point", "coordinates": [36.817223, -1.286389]},
 			"properties": {
 			  'title': 'Nairobi, Kenya',
-			  "article":'',
+			  "article":'Public-making in a pandemic: The role of street art in East African countries',
+			  'issue':'1',
 			  "images": [
 				  ['images/feminists_fighting_against_COVID19.jpg', '<em>Feminsts Fighting Against COVID-19</em> - Mathare Roots Initiative'],
 				  ['images/corona_is_real.png', '<em>Corona is Real</em> - Mathare Roots/Msale'],
@@ -99,7 +105,8 @@ var geoJson = {
 			"geometry": { "type": "Point", "coordinates": [30.055666444, -1.939662908]},
 			"properties": {
 			  'title': 'Kigali, Rwanda',
-			  "article":'',
+			  "article":'Public-making in a pandemic: The role of street art in East African countries',
+			  'issue':'1',
 			  "images": [
 				  ['images/the_everyday_fight_against_COVID19.png', '<em>The everyday fight against COVID-19</em> - Innocent Kagabo']
 			  ]
@@ -128,7 +135,9 @@ function onEachFeature(feature, layer) {
 	// does this feature have a property named popupContent?
 	if (feature.properties && feature.properties.title) {
 	
-		var images = feature.properties.images
+		var images = feature.properties.images;
+		var issue = feature.properties.issue;
+		var art_title = feature.properties.article;
 		var slideshowContent = '';
 	
 		for (var i = 0; i < images.length; i++) {
@@ -136,7 +145,7 @@ function onEachFeature(feature, layer) {
 	
 			slideshowContent += '<div class="image' + (i === 0 ? ' active' : '') + '">' +
 								  '<img src="' + img[0] + '" style="max-height:90px; max-width:150px;"/>' +
-								  '<div class="caption">' + img[1] + '</div>' +
+								  '<div class="caption">' + img[1] + '<br>'+ "From " + '<em>'+ art_title + '</em>'+" in Issue" + issue + '</div>' +
 								'</div>';
 			 }
 	
@@ -144,35 +153,33 @@ function onEachFeature(feature, layer) {
 							'<div id="' + feature.properties.title + '"class="popup">' +
 								'<div class="slideshow">' +
 									slideshowContent +
-								'</div>' +
+								'</div>' + 
 								'<div class="cycle">' +
 									'<a class="prev" href="#" >&laquo; Previous</a>' +
 									'<a class="next" href="#">Next &raquo;</a>' +
 								'</div>'+
-								'<div class="button button-popup">Go to the article</div>'
+								'<div class="button button-popup">Go to the issues</div>'
 							'</div>';
-	
-		layer
-		.bindPopup(popupContent);
 		
+	
+		layer.bindPopup(popupContent);
 	}
-	  };
+};
 
 
-L.geoJson(geoJson, {
+var markersLayer = L.geoJson(geoJson, {
 	pointToLayer: function(feature, latlng) {
 		var greenIcon = L.icon({
 			iconUrl: "images/map_marker.png",
-			
-		
 			iconSize:     [25, 42], // size of the icon
 			iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-			shadowAnchor: [4, 62],  // the same for the shadow
 			popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 		});
 		return L.marker(latlng, {icon: greenIcon});
 	},
 	onEachFeature: onEachFeature}).addTo(map);
+
+
 
 
 $('#map').on('click', '.popup .cycle a', function() {
@@ -202,8 +209,7 @@ document.getElementById('map').addEventListener('click', function(event) {
     // Check if the clicked element is a button with the class 'button-popup'
     if (target.classList.contains('button-popup')) {
         // Handle button click event here
-        // You can use this section to redirect to another page or perform any other action
-        window.location.href = 'article.html'; // Example: Redirect to article.html	
+        window.location.href = 'article.html'; 
     }
 });
 
@@ -277,7 +283,7 @@ function initializeScrolling(columnSelector, fixmeSelector) {
 			});
 		}
 	});
-}
+};
 
 // Example usage
 initializeScrolling('.scrolling-column1', '#fix-me1');

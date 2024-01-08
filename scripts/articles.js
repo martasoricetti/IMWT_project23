@@ -359,5 +359,21 @@ function showIndex(){
   var div = document.createElement('div');
   div.appendChild(ul);
   divToFill.appendChild(div)};
+}else{
+  var advice = document.createElement('p');
+  advice.innerHTML = "No index available for this article";
+  divToFill.appendChild(advice);
 }};
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Retrieve parameters from sessionStorage
+  var issue = sessionStorage.getItem('issue');
+  var title = sessionStorage.getItem('article');
+
+  // Use the parameters as needed
+  console.log('Issue:', issue);
+  console.log('Title:', title);
+
+  
+});
 

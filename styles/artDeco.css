@@ -42,11 +42,6 @@ a{color: #800020;}
 
 
 /* ! BUTTON SYSTEM */
-.contain{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .roman-link {
   position: relative;
@@ -614,9 +609,11 @@ table th {
   border: 3px solid #800020;
 }
 
-
-
-
+.timeline .contain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /*BUTTON FOR HIGHLIGHTED ELEMENTS*/
 
