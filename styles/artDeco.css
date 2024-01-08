@@ -440,6 +440,8 @@ a{color: #800020;}
   border-bottom: 4px solid #0b1764;;
 }
 #dropDocuments li, #dropInformation li, #dropIndex li, #dropMetadata{color:#800020;}
+#dropDocuments, #dropInformation, #dropIndex, #dropMetadata{color:#800020;}
+
 #dropDocuments li:hover, #dropInformation a:hover, #dropIndex li:hover{font-weight: bold; cursor:pointer;}
 
 /*different highlight styles for each metadata class*/
