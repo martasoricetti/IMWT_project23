@@ -85,16 +85,15 @@ $(function loadIssues(){
               img.setAttribute('style', 'width:100%');
               col30Div.appendChild(img);
               div_container = document.createElement('div');
-              div_container.classList.add('container');
-              h4 = document.createElement('h4');
-              h4.classList.add('p-1');
+              div_container.classList.add('card_container');
+              p = document.createElement('p');
               col30Div.setAttribute("style", "cursor:pointer;")
               col30Div.addEventListener('click', function() {
                 toggleSidebar([documents]);
                 loadDocumentsData(issue.issue_articles);
                 });
-              h4.innerHTML = '<b>'+"Issue"+number+": "+title+'</b>';
-              div_container.appendChild(h4);
+              p.innerHTML = '<b>'+"Issue"+number+": "+title+'</b>';
+              div_container.appendChild(p);
               col30Div.appendChild(div_container);
             };
             

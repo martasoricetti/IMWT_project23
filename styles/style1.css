@@ -72,12 +72,12 @@ a{color: #44D044;}
 /*METADATA and DOCUMENTS*/
 .metadata{
   background-color: #5D1482;
-  border-top:4px solid #01bd01;
-  border-right:4px solid #01bd01;
-  border-left:4px solid #01bd01;
+  border-top:4px solid  #292929;
+  border-right:4px solid  #292929;
+  border-left:4px solid  #292929;
 }
 #border_bottom_metadata{
-  border-bottom: 4px solid #01bd01;
+  border-bottom: 4px solid #292929;
 }
 
 #dropDocuments li {color:var(--menu-color);}
