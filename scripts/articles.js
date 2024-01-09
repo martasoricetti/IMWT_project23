@@ -248,7 +248,8 @@ function handleCheckboxChange(className, checked) {
 
     const spans = document.querySelectorAll(`#article span.${className}`);
     var selectedElements = []; // Array to store all checked elements;
-
+    var h3 = document.createElement('h3');
+    h3.innerHTML=className;
     var ul = document.createElement('ul');
     spans.forEach((span) => {
       selectedElements.push(span);
@@ -289,12 +290,16 @@ function handleCheckboxChange(className, checked) {
   li.dataset.index = selectedElements.length - 1; // Store the index of the associated span element
   ul.appendChild(li);
     };
+  inner_container.appendChild(h3);
   inner_container.appendChild(ul);
   // Append the inner container to the metadata container if it's not already there
   if (!metadata_container.contains(inner_container)) {
     metadata_container.appendChild(inner_container);
-  }
-  } else {
+    h3.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center',
+    });
+  }} else {
     // If the inner container exists, remove it
     if (inner_container) {
       inner_container.remove();

@@ -259,6 +259,13 @@ padding:10px 0 20px;
   margin-top: 12px;
 }
 
+
+@keyframes highlight {
+  50% { background: transparent; }}
+.highlight{
+  animation: highlight 0.4s 8;
+}
+
 /* SIDEBAR */
 .sidebar{
   width: 30px;

@@ -463,14 +463,13 @@ a{color: #800020;}
   border: 3px solid #EF3E5B; padding:2px;background: transparent;
 }
 
-.highlight{
-  background-color: #e6be20;
-}
 @keyframes highlight {
-  50% { background: transparent; }}
+  50% { border:3px solid transparent; }}
 .highlight{
-  animation: highlight 0.8s 3;
+  animation: highlight 0.4s 8;
 }
+
+
 /*CHECKBOX*/
 
 /* When the checkbox is checked, add a colored background */
