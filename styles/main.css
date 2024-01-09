@@ -3,10 +3,7 @@
 @font-face { font-family: Typewritern; src: url('Typewritten.ttf');}
 @font-face { font-family: DOCALLISME ON STREET; src: url('DocallismeOnStreet-ZVO1Z.otf'); }
 @font-face {font-family: Peignot; src: url('Peignot.ttf');}
-@font-face {
-  font-family: Delauney;
-  src: url('DelauneyRegular-8MArM.ttf');
-}
+@font-face {font-family: Delauney; src: url('DelauneyRegular-8MArM.ttf');}
 
 /* ! Reset per diversi browser*/
 
@@ -49,16 +46,11 @@ body, html{ font-family: 'Inter', Arial, Helvetca, sans-serif; font-size: 16px; 
 
 }
 
-
-
-
-
 /* ! TITLE SYSTEM - specific for each style*/
 
 /* ! BUTTON SYSTEM - specific for each style */
 
 /* ! COVER */
-
 
 /* ! MAP */
 #map {height: 80vh;}

@@ -1,6 +1,19 @@
+//Create a Leaflet map object
+//[latitute, longitude] for the initial center of the map and initial zoom level
 var map = L.map('map').setView([12, 5], 2);
 
 
+// tileLayer
+L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png', {
+	minZoom: 0,
+	maxZoom: 20,
+	attribution: '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
+	ext: 'png'
+}).addTo(map);
+
+
+//GeoJSON Object 
+//geometry coordinates [longitude, latitude]
 var geoJson = {
     "type": "FeatureCollection",
           features: [{
@@ -116,25 +129,11 @@ var geoJson = {
 };
 
 
-
-// tileLayer
-L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png', {
-	minZoom: 0,
-	maxZoom: 20,
-	attribution: '&copy; <a href="https://stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a>',
-	ext: 'png'
-}).addTo(map);
-
-let featureGroups = [];
-let groupBounds;
-let latlngs = [];
-
-
-
 function onEachFeature(feature, layer) {
-	// does this feature have a property named popupContent?
-	if (feature.properties && feature.properties.title) {
 	
+	if (feature.properties && feature.properties.title) {
+		
+		var title = feature.properties.title;
 		var images = feature.properties.images;
 		var issue = feature.properties.issue;
 		var art_title = feature.properties.article;
@@ -145,7 +144,7 @@ function onEachFeature(feature, layer) {
 	
 			slideshowContent += '<div class="image' + (i === 0 ? ' active' : '') + '">' +
 								  '<img src="' + img[0] + '" style="max-height:90px; max-width:150px;"/>' +
-								  '<div class="caption">' + img[1] + '<br>'+ "From " + '<em>'+ art_title + '</em>'+" in Issue" + issue + '</div>' +
+								  '<div class="caption">' + '<b>'+title+'</b>' + '<br>'+img[1] + '<br>'+ "From " + '<em>'+ art_title + '</em>'+" in Issue" + issue + '</div>' +
 								'</div>';
 			 }
 	
@@ -166,21 +165,23 @@ function onEachFeature(feature, layer) {
 	}
 };
 
-
+//Creates a GeoJSON layer (GeoJSON object, options) for markers on the map.
+//pointToLayer used for creating a custom marker for each feature
+//onEacHFeature used to bind popups to each marker
 var markersLayer = L.geoJson(geoJson, {
 	pointToLayer: function(feature, latlng) {
-		var greenIcon = L.icon({
+		var Icon = L.icon({
 			iconUrl: "images/map_marker.png",
 			iconSize:     [25, 42], // size of the icon
 			iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
 			popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 		});
-		return L.marker(latlng, {icon: greenIcon});
+		return L.marker(latlng, {icon: Icon});
 	},
 	onEachFeature: onEachFeature}).addTo(map);
 
-
-
+//For handling click events on navigation buttons (prev and next) within 
+//the popups of the Leaflet map.
 
 $('#map').on('click', '.popup .cycle a', function() {
 	var $slideshow = $('.slideshow'),
@@ -204,16 +205,19 @@ $('#map').on('click', '.popup .cycle a', function() {
 });
 
 // Use event delegation to handle button clicks inside the map container
-document.getElementById('map').addEventListener('click', function(event) {
+$('#map').on('click', function(event) {
     var target = event.target;
-    // Check if the clicked element is a button with the class 'button-popup'
-    if (target.classList.contains('button-popup')) {
-        // Handle button click event here
+    // Check if the clicked element is a div with both classes 'button' and 'button-popup'
+    if ($(target).is('div.button.button-popup')) {
+        // Handle click event here
         window.location.href = 'article.html'; 
     }
 });
 
+//COVER
 
+//function to load on the home page last articles' cards
+// it fetches data fto  the articlesJson.json file dynamically creates HTML elements (cards) for each article using the retrieved data. 
 $(function loadCovers() {
 
 	// Fetch JSON data
@@ -222,7 +226,6 @@ $(function loadCovers() {
 		.then((data) => {
 			const lastArticlesSec = document.getElementById("last_articles");
 			
-			// Populate the dropdown options based on JSON data
 			data.last_articles.forEach((article) => {
 				if (article.cover){
 				const cover = article.cover;
@@ -245,26 +248,34 @@ $(function loadCovers() {
 			}
 			})})});
 
+//Control the scrolling of the page
 function initializeScrolling(columnSelector, fixmeSelector) {
+
+	//select the column and the element to be fixed
 	var col = $(columnSelector);
 	var fixme = $(fixmeSelector);
+
+	// Get the initial top position of the fixme element
 	var fixmeTop = fixme.offset().top;
+
 	var height_logo = document.getElementById('logo').offsetHeight;
+
+	// Define a media query for a minimum width of 991px
 	var mediaQuery = window.matchMedia('(min-width: 991px)');
 
 	//scroll event listener on the window
 	$(window).scroll(function() {
-		// is a method provided by jQuery. 
-		//It retrieves the vertical scrollbar position for the first element in the set of matched elements, 
-		//which, in this case, is the window. It returns the number of pixels that the document is currently scrolled vertically.
+		
+		// Retrieve the vertical scrollbar position
 		var currentScroll = $(window).scrollTop();
+
+		//top position of the column
 		var colTop = col.offset().top;
+
 		var colBottom = colTop  + (col.height() - fixme.height());
 		var viewportBottom = currentScroll + $(window).height() - fixme.height()
 
-		//The current scroll position is greater than or equal to the top position of the fixed column
-		//The top position of the scrolling column is less than or equal to the bottom of the viewport.
-		//The bottom of the scrolling column is greater than or equal to the current scroll position.
+	
 		if (mediaQuery.matches && currentScroll >= fixmeTop && currentScroll >= colTop && colTop <= viewportBottom && colBottom >= currentScroll) {
 			if (fixme.height() <= $(window).height()) {
 				fixme.css({
@@ -285,7 +296,7 @@ function initializeScrolling(columnSelector, fixmeSelector) {
 	});
 };
 
-// Example usage
+
 initializeScrolling('.scrolling-column1', '#fix-me1');
 initializeScrolling('.scrolling-column2', '#fix-me2');
 initializeScrolling('.scrolling-column3', '#fix-me3');

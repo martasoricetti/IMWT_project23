@@ -7,14 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-//ICON HAMBURGER TO OPEN THE MENU-
-
-let item = document.querySelector('.icon-hamburger');
-item.addEventListener("click", function() {
-    document.body.classList.toggle('menu-open');
-});
-
-
 //BUTTON STYLE
 $(document).ready(function() {
     document.getElementById('container-button').addEventListener('click', function() {
@@ -71,6 +63,15 @@ window.addEventListener('scroll', function () {
         navbar.classList.add("nav-transparent-background");
     }
 });
+
+
+//ICON HAMBURGER TO OPEN THE MENU-
+
+let item = document.querySelector('.icon-hamburger');
+item.addEventListener("click", function() {
+    document.body.classList.toggle('menu-open');
+});
+
 
  // Show/hide the button based on scroll position
  window.onscroll = function() {
