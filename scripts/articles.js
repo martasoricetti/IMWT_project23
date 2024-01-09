@@ -148,7 +148,7 @@ function loadDocumentsData(list_of_articles_dict) {
 
             if(!titleKeyArtInfo.has(list_item)) {
               fillArticleInfo(title, author, venue, link);
-              titleKeyArtInfo.add(list_item);
+              titleKeyArtInfo.add(list_item); // Add list_item to the set to mark it as executed
             }
 
             if(!titleKeyArtIndex.has(list_item)){
@@ -158,7 +158,7 @@ function loadDocumentsData(list_of_articles_dict) {
 
             if (!titleKeyMeta.has(list_item)) { 
                 loadMetadata();
-                titleKeyMeta.add(list_item); // Add list_item to the set to mark it as executed
+                titleKeyMeta.add(list_item);
             };
 
             if (!titleKeyMetaCont.has(list_item)){
@@ -364,16 +364,4 @@ function showIndex(){
   advice.innerHTML = "No index available for this article";
   divToFill.appendChild(advice);
 }};
-
-document.addEventListener('DOMContentLoaded', function() {
-  // Retrieve parameters from sessionStorage
-  var issue = sessionStorage.getItem('issue');
-  var title = sessionStorage.getItem('article');
-
-  // Use the parameters as needed
-  console.log('Issue:', issue);
-  console.log('Title:', title);
-
-  
-});
 

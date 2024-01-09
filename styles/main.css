@@ -1,9 +1,9 @@
-@font-face { font-family: PunkWest; src: url('Punk\ West.otf');}
-@font-face { font-family: Handwritten; src: url('Handwritten.ttf');}
-@font-face { font-family: Typewritern; src: url('Typewritten.ttf');}
-@font-face { font-family: DOCALLISME ON STREET; src: url('DocallismeOnStreet-ZVO1Z.otf'); }
-@font-face {font-family: Peignot; src: url('Peignot.ttf');}
-@font-face {font-family: Delauney; src: url('DelauneyRegular-8MArM.ttf');}
+@font-face { font-family: PunkWest; src: url('font/Punk\ West.otf');}
+@font-face { font-family: Handwritten; src: url('font/Handwritten.ttf');}
+@font-face { font-family: Typewritern; src: url('font/Typewritten.ttf');}
+@font-face { font-family: DOCALLISME ON STREET; src: url('font/DocallismeOnStreet-ZVO1Z.otf'); }
+@font-face {font-family: Peignot; src: url('font/Peignot.ttf');}
+@font-face {font-family: Delauney; src: url('font/DelauneyRegular-8MArM.ttf');}
 
 /* ! Reset per diversi browser*/
 
@@ -287,6 +287,10 @@ padding:10px 0 20px;
   right:0;
   min-height:100vh;
   align-items: center;
+}
+
+#sidebar-toggle-button:hover{
+  cursor: pointer;
 }
 
 .sidebar_button {

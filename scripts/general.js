@@ -1,55 +1,42 @@
-// On page load, check if a style is stored in local storage and apply it
-document.addEventListener('DOMContentLoaded', function() {
-    const selectedStyle = localStorage.getItem('selectedStyle');
-    if (selectedStyle) {
-        // Apply the stored style to the page
-        document.getElementById("historical_css").setAttribute("href", selectedStyle);
-    }
-});
-
 //BUTTON STYLE
 $(document).ready(function() {
-    document.getElementById('container-button').addEventListener('click', function() {
-        var styleButtons = document.querySelectorAll('.style-button');
-        styleButtons.forEach(function(button) {
-          button.style.display = (button.style.display === 'none' ? 'block' : 'none');
-        });
-        var ArtDeco = document.getElementById('artDeco-style');
-        ArtDeco.addEventListener('click', function(){
-            document.getElementById("historical_css").setAttribute("href", "styles/artDeco.css");
-            localStorage.setItem('selectedStyle', "styles/artDeco.css");
-            changeStyle('artDeco-style');
-        });
-        var Punkzine = document.getElementById('punkzine-style');
-        Punkzine.addEventListener('click', function(){
-            document.getElementById("historical_css").setAttribute("href", "styles/punkzine.css");
-            localStorage.setItem('selectedStyle', "styles/punkzine.css");
-            changeStyle('punkzine-style');
-        });
-        var Default = document.getElementById('default-style');
-        Default.addEventListener('click', function(){
-            document.getElementById("historical_css").setAttribute("href", "styles/style1.css");
-            localStorage.setItem('selectedStyle', "styles/style1.css");
-            changeStyle('default-style')
-        })
-    });
-});
 
-// Function to change the style
-    function changeStyle(styleId) {
-      // Reset all buttons to default style
-      var buttons = document.querySelectorAll('.style-button');
-      buttons.forEach(function(button) {
-        button.classList.remove('active-style-button');
+  const selectedStyle = sessionStorage.getItem('selectedStyle');
+    if (!selectedStyle){
+      document.getElementById("historical_css").setAttribute("href", 'styles/style1.css');
+    } else {
+      document.getElementById("historical_css").setAttribute("href", selectedStyle);
+    };
+
+  // Toggle the display of style buttons
+  document.getElementById('container-button').addEventListener('click', function() {
+      var styleButtons = document.querySelectorAll('.style-button');
+      styleButtons.forEach(function(button) {
+        button.style.display = (button.style.display === 'none' ? 'block' : 'none');
       });
+  });
 
-      // Apply active style to the clicked button
-      var activeButton = document.getElementById(styleId);
-      
-      // Add logic to apply the chosen style to the page based on the styleId
-      // You can implement your own logic here to apply styles
-    }
+  // Event listener for ArtDeco style
+  var ArtDeco = document.getElementById('artDeco-style');
+  ArtDeco.addEventListener('click', function(){
+      document.getElementById("historical_css").setAttribute("href", "styles/artDeco.css");
+      sessionStorage.setItem('selectedStyle', "styles/artDeco.css");
+  });
 
+  // Event listener for Punkzine style
+  var Punkzine = document.getElementById('punkzine-style');
+  Punkzine.addEventListener('click', function(){
+      document.getElementById("historical_css").setAttribute("href", "styles/punkzine.css");
+      sessionStorage.setItem('selectedStyle', "styles/punkzine.css");
+  });
+
+  // Event listener for Default style
+  var Default = document.getElementById('default-style');
+  Default.addEventListener('click', function(){
+      document.getElementById("historical_css").setAttribute("href", "styles/style1.css");
+      sessionStorage.setItem('selectedStyle', "styles/style1.css");
+  });
+});
 
 window.addEventListener('scroll', function () {
     const navbar = document.querySelector('.header');
@@ -72,19 +59,19 @@ item.addEventListener("click", function() {
     document.body.classList.toggle('menu-open');
 });
 
-
- // Show/hide the button based on scroll position
- window.onscroll = function() {
-    var scrollTopBtn = document.getElementById("go_top");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-      scrollTopBtn.style.display = "block";
-    } else {
-      scrollTopBtn.style.display = "none";
-    }
-  };
-
- // Function to scroll to the top of the page
- function scrollToTop() {
-    document.body.scrollTop = 0;  // For Safari
-    document.documentElement.scrollTop = 0;  // For Chrome, Firefox, IE, and Opera
+//SCROLL TO TOP 
+// Show/hide the button based on scroll position
+window.onscroll = function() {
+  var scrollTopBtn = document.getElementById("go_top");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    scrollTopBtn.style.display = "block";
+  } else {
+    scrollTopBtn.style.display = "none";
   }
+};
+
+// Function to scroll to the top of the page
+function scrollToTop() {
+  document.body.scrollTop = 0;  // For Safari
+  document.documentElement.scrollTop = 0;  // For Chrome, Firefox, IE, and Opera
+}
